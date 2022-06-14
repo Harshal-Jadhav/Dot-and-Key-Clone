@@ -1,3 +1,5 @@
+/* nav bar style componens */
+
 body {
     margin: 0px;
     padding: 0px;
@@ -108,7 +110,9 @@ body {
     border: none;
 }
 
+/* Footer style components */
 #footer {
+    margin-top: 50px;
     display: grid;
     grid-template-columns: 31.5% 31.5% 31.5%;
     justify-content: center;
