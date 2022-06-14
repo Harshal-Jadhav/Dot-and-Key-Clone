@@ -1,0 +1,23 @@
+
+
+ body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.top_img>img{
+    width: 100%;
+    border-radius: 20px;
+}
+.sectionName{
+    width: 100%;
+    text-align: center;
+    margin: 50px 0px 0px;
+    padding: auto;
+    font-size: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+.products{
+    padding: 30px 40px 60px;
+}
