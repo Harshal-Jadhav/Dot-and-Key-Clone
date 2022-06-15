@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
+    font-family: sans-serif;
 }
 
 #banner-1 {
@@ -25,12 +28,13 @@
 
 #banner-1>div>p {
     margin: 5px 0px 5px 0px;
+    font-family: sans-serif;
 }
 
-.slidingBanner-1 {
+#slidingBanner-1 {
+    margin-top: 16px;
     width: 100%;
     height: 400px;
-    border: 101px;
     overflow: hidden;
 }
 
@@ -52,6 +56,7 @@
 .slide img {
     width: 100%;
     height: 400px;
+    border-radius: 16px;
 }
 
 /* CSS for manual slide navigation */
@@ -64,7 +69,7 @@
 }
 
 .manual-btn {
-    border: 2px solid red;
+    border: 1px solid gray;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -72,7 +77,7 @@
 }
 
 .manual-btn:not(:last-child) {
-    margin-right: 16px;
+    margin-right: 8px;
 }
 
 .manual-btn:hover {
@@ -99,6 +104,7 @@
     margin-left: -80%;
 }
 
+/* CSS for auto Navigation */
 .Navigation-auto {
     position: absolute;
     display: flex;
@@ -108,14 +114,14 @@
 }
 
 .Navigation-auto>div {
-    border: 2px solid red;
+    border: 1px solid gray;
     padding: 5px;
     border-radius: 10px;
     transition: 1s;
 }
 
 .Navigation-auto>div:not(:last-child) {
-    margin-right: 16px;
+    margin-right: 8px;
 }
 
 #radio1:checked~.Navigation-auto .auto-btn1 {
@@ -136,4 +142,71 @@
 
 #radio5:checked~.Navigation-auto .auto-btn5 {
     background-color: gray;
+}
+
+.smallHeading {
+    text-align: center;
+    margin-top: 64px;
+    margin-bottom: 8px;
+    font-weight: 100;
+    font-size: 24px;
+    color: #302f2f;
+}
+
+.smallHeading2 {
+    text-align: center;
+    font-size: 56px;
+    color: #302f2f;
+    margin-bottom: 32px;
+}
+
+.smallHeading2>span {
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 550;
+}
+
+#slidingBanner-2 {
+    margin-top: 16px;
+    width: 90%;
+    margin: auto;
+    height: 300px;
+    overflow: hidden;
+}
+
+.slides2 {
+    width: 500%;
+    height: 300px;
+    display: flex;
+}
+
+.slides2 input {
+    display: none;
+}
+
+.slide2 {
+    width: 20%;
+    transition: 1s;
+}
+
+.slide2 img {
+    width: 100%;
+    height: 300px;
+    border-radius: 16px;
+}
+
+.Navigation-manual2 {
+    position: absolute;
+    width: 90%;
+    margin-top: 308px;
+    display: flex;
+    justify-content: center;
+}
+
+#radio6:checked~.first2 {
+    margin-left: 0;
+}
+
+#radio7:checked~.first2 {
+    margin-left: -20%;
 }
