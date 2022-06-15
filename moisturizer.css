@@ -9,6 +9,7 @@
     width: 100%;
     border-radius: 20px;
 }
+
 .sectionName{
     width: 100%;
     text-align: center;
@@ -18,6 +19,50 @@
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
+
 .products{
     padding: 30px 40px 60px;
 }
+
+.checked {
+    color: orange;
+   
+  }
+
+  .fa.fa-star{
+    margin: 4px;
+    font-size: 12px;
+  }
+
+
+  .products{
+    display: grid;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+  }
+  .products>div>img{
+    width: 100%;
+  }
+ 
+  .fa.fa-heart{
+    font-size: 22px;
+    padding-right: 20px;
+  }
+
+  .productName{
+    font-size: 13px;
+    width:100%;
+    height:60px;
+    text-align:center;
+    margin-top:8px;
+  }
+  .footerSticky{
+    width: 100%;
+    height: 50px;
+    position:fixed;
+    bottom: 0px;
+    background-color: rgb(243, 237, 237);
+  }
