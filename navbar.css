@@ -206,4 +206,5 @@ input[id=footerEmail] {
     background-color: rgb(56, 52, 52);
     border: none;
     cursor: pointer;
+    /* border: #50504b; */
 }
