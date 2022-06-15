@@ -13,6 +13,7 @@ body {
 
 #navBar {
     position: sticky;
+    z-index: 97;
     top: 0;
 }
 
@@ -27,14 +28,13 @@ body {
     color: white;
 }
 
-#navBar>div:last-child {
+#navBar>div:nth-child(2) {
     /* border: 1px solid; */
     display: grid;
     grid-template-columns: 37% 23% 40%;
     gap: 20px;
     align-items: center;
     padding: 10px 50px 10px 50px;
-    border-bottom: 0.5px solid rgb(177, 177, 177);
     background-color: white;
 }
 
