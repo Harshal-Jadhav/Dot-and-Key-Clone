@@ -185,6 +185,7 @@ function display(element){
                 price.append(strikepric,prodPric);
 
             let btn=document.createElement("button");
+            btn.setAttribute("class","button");
             btn.innerText="ADD TO CART";
 
             prod.append(image,ratRev,prodNam,prodTyp,price,btn);
