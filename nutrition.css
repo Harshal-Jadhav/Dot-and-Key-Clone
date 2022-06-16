@@ -106,29 +106,34 @@
   background-color: #8c73c9;
   color: white;
   border: none;
+  z-index: 1;
 }
 
 /* Footer style components */
 #footer {
-  margin-top: 50px;
   display: grid;
   grid-template-columns: 31.5% 31.5% 31.5%;
-  justify-content: center;
-  padding-top: 95px;
+  justify-content: space-evenly;
+  padding: 95px 0px;
   border-top: 0.5px solid rgb(127, 126, 126);
+  background-color: rgb(56, 52, 52);
+}
+
+.inputh1 {
+  color: white;
 }
 
 #footer > div > h1 {
   font-size: 20px;
   margin-bottom: 30px;
-  color: rgb(41, 38, 38);
+  color: white;
 }
 
 #footer > div > p {
   font-size: 18px;
   font-weight: 100;
   margin-bottom: 20px;
-  color: rgb(78, 78, 78);
+  color: white;
 }
 
 #footer > div > p:hover {
@@ -145,7 +150,7 @@
   margin-top: 25px;
   font-size: 20px;
   font-weight: 600;
-  color: rgb(56, 52, 52);
+  color: white;
 }
 
 #footer > div:nth-child(3) > div:nth-child(4) {
@@ -157,18 +162,21 @@
   display: inline;
   font-size: 17px;
   /* border: 1px solid; */
-  color: rgb(56, 52, 52);
+  color: white;
   cursor: pointer;
 }
 
 .fa {
   /* border: 1px solid; */
   /* padding-left: 10px; */
-  margin-left: 20px;
-  font-size: 25px;
-  width: 10px;
+  margin-left: 15px;
+  font-size: 20px;
+  width: 15px;
   text-align: center;
   text-decoration: none;
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 100px;
 }
 
 .cr {
@@ -184,13 +192,13 @@
 }
 
 input[id="footerEmail"] {
-  width: 70%;
+  width: 50%;
   height: 40px;
   border: none;
   outline: none;
-  border-bottom: 2px solid rgb(56, 52, 52);
+  border-bottom: 2px solid white;
   font-size: 16px;
-  color: rgb(56, 52, 52);
+  background-color: rgb(56, 52, 52);
 }
 
 #footerSubmit {
@@ -198,7 +206,8 @@ input[id="footerEmail"] {
   height: 46px;
   font-size: 16px;
   color: white;
-  background-color: rgb(56, 52, 52);
+  background-color: transparent;
+
   border: none;
   cursor: pointer;
 }
@@ -247,14 +256,15 @@ input[id="footerEmail"] {
   color: black;
   text-align: center;
   font-style: italic;
-  font-weight: bolder;
+  font-weight: 700;
+  font-family:initial;
 }
 #poster > div > img:nth-child(1) {
   width: 283px;
   margin: auto;
 }
 #productslider {
-  background-color: #989898;
+  background-color: #D8D8D8;
 }
 #productslider > div {
   width: 40%;
@@ -293,6 +303,15 @@ h1 {
 .price {
   display: flex;
   justify-content: space-around;
+  /* margin: 0px 80px; */
+}
+#wish{
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 20px;
+}
+.checked{
+  color: black;
 }
 h6 {
   color: grey;
@@ -318,13 +337,30 @@ h6 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   margin: auto;
-  gap: 10px 20px;
-  background-color: #ffce51;
+  background-color:#FCEE91;
+  position: relative;
 }
-.btn {
+#btn1>button{
+ position: absolute;
+ top: 40%;
+ font-size: 30px;
+ background-color: transparent;
+ border: none;
+ color: red;
+ width: 50px;
+ height: 50px;
+ cursor: pointer;
+}
+#btn1>button:nth-child(2){
+  left: 5%;
+}
+#btn1>button:nth-child(3){
+  right: 5%;
+}
+.button3 {
   padding: 15px 40px;
   background-color: transparent;
   font-size: 18px;
@@ -341,4 +377,26 @@ h6 {
 #deskstyle > div > p {
   font-size: 21px;
   margin: 20px 0px;
+}
+#image1 {
+  width: 56px;
+  color: white;
+}
+#image2 {
+  width: 56px;
+  color: white;
+}
+#footerlogo {
+  width: 100%;
+  display: flex;
+}
+#mainlogo {
+  display: flex;
+}
+.input{
+  color: white;
+}
+.check{
+  color: orange;
+  width: fit-content;
 }

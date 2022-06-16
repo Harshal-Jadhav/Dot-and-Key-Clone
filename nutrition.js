@@ -47,3 +47,4 @@ buttons[1].addEventListener("click", function () {
   }
   img.src = imgArr[imgN];
 });
+
