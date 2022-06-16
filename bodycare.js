@@ -187,29 +187,47 @@ function display(element){
             let btn=document.createElement("button");
             btn.setAttribute("class","button");
             btn.innerText="ADD TO CART";
+            btn.addEventListener("click",function(){
+                addCart(element);
+            });
 
             prod.append(image,ratRev,prodNam,prodTyp,price,btn);
             main.append(prod);
 }
 
 
-
-    document.querySelector(".bodyProd").append(ctnm,ctgr,slgn,main);
+document.querySelector(".bodyProd").append(ctnm,ctgr,slgn,main);
 })
 
+let cartDetail=JSON.parse(localStorage.getItem("cartData"))||[]||null;
+function addCart(element){
+    if(check(element.prodName)===true){
+        cartDetail.push(element);
+        localStorage.setItem("cartData",JSON.stringify(cartDetail));
+    }
+}
+function check(element){
+    let result=cartDetail.filter(function(ele){
+        return ele.prodName===element;
+    })
+    if(result.length>0){
+        return false;
+    }
+    else{
+        return true;
+    }
+}
 
 
 
-// sliding window concepts
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
+
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
@@ -223,5 +241,4 @@ function showSlides(n) {
     slides[i].style.display = "none";
   }
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
 }

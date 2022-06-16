@@ -13,6 +13,7 @@ body {
 #navBar {
     position: sticky;
     top: 0;
+    z-index:97;
 }
 
 #navBar>div:first-child {
