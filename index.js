@@ -23,7 +23,8 @@ let bestSeller = [
         count: '(226)',
         des: 'SALICYLIC&FRENCH GREEN CLAY FACE MASK WITH MATCH TEAI ....',
         strikeoff: 695.00,
-        price: 660
+        price: 660,
+        itemQty: 1
     },
     {
         img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1_e423c2c9-3a60-4a5e-9bc0-b0526b7f3c01.jpg?v=1655302612",
@@ -31,7 +32,8 @@ let bestSeller = [
         count: '(211)',
         des: '10%NIACINAMIDE FACE SERUM WITH ZINC&ANTIOXIDANTSI ...',
         strikeoff: 665.00,
-        price: 598.00
+        price: 598.00,
+        itemQty: 1
     },
     {
         img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/LIPMASK.jpg?v=1655311025",
@@ -39,7 +41,8 @@ let bestSeller = [
         count: '(212)',
         des: 'RETINOL&CERAMIDE AGE DEFENSE NIGHT CREAM FOR FACE ...',
         strikeoff: 945.00,
-        price: 850.02
+        price: 850.02,
+        itemQty: 1
     }
 ]
 
@@ -50,7 +53,8 @@ let newArrivals = [
         count: '(2)',
         des: 'BIG BIRTHDAY SPECIAL SKINCAREKIT',
         strikeoff: 3000.00,
-        price: 2699
+        price: 2699,
+        itemQty: 1
     },
     {
         img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/CICASUNSCREEN.jpg?v=1655303963",
@@ -58,7 +62,8 @@ let newArrivals = [
         count: '(5)',
         des: 'CICA+NIACINAMIDE FACE SUNSCREEN SPF 50 PA +++|BROA ...',
         strikeoff: 595.00,
-        price: 494.00
+        price: 494.00,
+        itemQty: 1
     },
     {
         img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/20_VITC.jpg?v=1655303889",
@@ -66,7 +71,8 @@ let newArrivals = [
         count: '(27)',
         des: '20%VITAMINCSERUM WITH BLOOD ORANGE|FOR SKIN GLO .....',
         strikeoff: 665.00,
-        price: 532.00
+        price: 532.00,
+        itemQty: 1
     }
 ]
 
