@@ -1,0 +1,383 @@
+/* nav bar style componens >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+.material-symbols-outlined {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#navBar {
+    position: sticky;
+    z-index: 97;
+    top: 0;
+}
+
+#navBar>div:first-child {
+    height: 35px;
+    background-color: #50504b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+}
+
+#navBar>div:last-child {
+    /* border: 1px solid; */
+    display: grid;
+    grid-template-columns: 37% 23% 40%;
+    gap: 20px;
+    align-items: center;
+    padding: 10px 50px 10px 50px;
+    border-bottom: 0.5px solid rgb(177, 177, 177);
+    background-color: white;
+}
+
+#navSearch {
+    display: flex;
+    align-content: center;
+    color: #555;
+    padding: 2px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+#navSearch>input[type="search"] {
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 0px 8px;
+    font-size: 14px;
+    color: inherit;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    width: 100%;
+    outline: none;
+    font-size: 18px;
+    height: 30px;
+}
+
+#submitSearch {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+#nav-headSection2 {
+    text-align: center;
+}
+
+#nav-headSection2>img {
+    width: 125px;
+    cursor: pointer;
+}
+
+#nav-headSection3 {
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: 70% 20% 1%;
+}
+
+#nav-headSection3>div:nth-child(2),
+#nav-headSection3>div:nth-child(3) {
+    display: flex;
+    justify-content: center;
+}
+
+.material-symbols-outlined {
+    padding-top: 3px;
+}
+
+.nav-icon {
+    background-color: transparent;
+    border: transparent;
+}
+
+#rewardButton {
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 15px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #8c73c9;
+    color: white;
+    border: none;
+}
+
+
+/* Footer style components */
+
+#footer {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 31.5% 31.5% 31.5%;
+    justify-content: center;
+    padding-top: 95px;
+    border-top: 0.5px solid rgb(127, 126, 126);
+}
+
+#footer>div>h1 {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: rgb(41, 38, 38);
+}
+
+#footer>div>p {
+    font-size: 18px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    color: rgb(78, 78, 78);
+}
+
+#footer>div>p:hover {
+    text-decoration: underline;
+}
+
+#footer>div:nth-child(3)>div:nth-child(2) {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+#footer>div:nth-child(3)>div:nth-child(3) {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(56, 52, 52);
+}
+
+#footer>div:nth-child(3)>div:nth-child(4) {
+    display: flex;
+    /* border: 1px solid; */
+}
+
+#footer>div:nth-child(3)>div:nth-child(4)>p {
+    display: inline;
+    font-size: 17px;
+    /* border: 1px solid; */
+    color: rgb(56, 52, 52);
+    cursor: pointer;
+}
+
+.fa {
+    /* border: 1px solid; */
+    /* padding-left: 10px; */
+    margin-left: 20px;
+    font-size: 25px;
+    width: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.cr {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    margin-right: 7px;
+    margin-left: 0px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+input[id=footerEmail] {
+    width: 70%;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(56, 52, 52);
+    font-size: 16px;
+    color: rgb(56, 52, 52);
+    ;
+}
+
+#footerSubmit {
+    width: 25%;
+    height: 46px;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(56, 52, 52);
+    border: none;
+    cursor: pointer;
+    /* border: #50504b; */
+}
+
+
+/* hairCare css part>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.namediv {
+    height: 50px;
+}
+
+#off15 {
+    margin-top: 16px;
+}
+
+#craauser {
+    width: 100%;
+    position: absolute;
+}
+
+img {
+    width: 100%;
+}
+
+#crauser>button {
+    position: absolute;
+    top: 350px;
+}
+
+#crauser>button:nth-child(2) {
+    left: 20px;
+}
+
+#crauser>button:nth-child(3) {
+    right: 20px;
+}
+
+#threepic {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(211, 227, 228);
+}
+
+#threepic>div {
+    width: 15%;
+    height: 70%;
+    background-color: white;
+}
+
+.three {
+    width: 100%;
+    height: 90%;
+    position: relative;
+}
+
+.round {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: rgb(41, 137, 132);
+    position: relative;
+    top: -300px;
+    left: -30px;
+    display: grid;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#threepic>div>h3 {
+    margin-top: -100px;
+    text-align: center;
+}
+
+
+/* HAIR CARE */
+
+#formulation {
+    text-align: center;
+    width: 100%;
+    height: 550px;
+    background-color: rgb(234, 247, 195);
+    padding: 60px;
+}
+
+#formulation>h1 {
+    margin-top: -18px;
+}
+
+#iner {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#iner>div {
+    width: 20%;
+    height: 350px;
+    border-radius: 10px;
+    background-color: rgb(194, 216, 122);
+    position: relative;
+}
+
+#iner>div>h3,
+p {
+    margin-top: 65px;
+}
+
+#iner>div>p {
+    margin-top: 30px;
+}
+
+#iner>div>h4 {
+    color: blue;
+}
+
+#iner>div>div>img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -35px;
+    left: -40px;
+}
+
+#heading {
+    width: 80%;
+    height: 200px;
+    text-align: center;
+    margin: auto;
+    margin-top: 150px;
+}
+
+#headingPro {
+    width: 950px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, auto);
+    justify-content: space-around;
+    gap: 20px;
+}
+
+#headingPro>div>p {
+    text-align: center;
+    margin-top: 0px;
+    display: inline;
+    margin-left: 5px;
+}
+
+#headingPro>div {
+    text-align: center;
+}
+
+#headingPro>div>h3,
+h5 {
+    text-align: center;
+}
+
+#headingPro>div>button {
+    text-align: center;
+    width: 100%;
+    background-color: rgb(92, 92, 92);
+    color: white;
+    height: 30px;
+}
+
+.checked {
+    color: orange;
+}
