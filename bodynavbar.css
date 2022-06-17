@@ -245,3 +245,81 @@ input[id=footerEmail] {
 .dotHidden {
     display: none;
 }
+
+/* New Update v2.0 */
+#menu {
+    border: 1px solid gray;
+    /* width: 80%; */
+    margin: auto;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    display: none;
+    z-index: 1;
+    position: fixed;
+    bottom: 50;
+    right: 10;
+    background-color: white;
+    border-radius: 16px;
+}
+
+body {
+    position: relative;
+}
+
+#menu>div {
+    height: 350px;
+    /* border: 1px solid red; */
+}
+
+#menu>div:first-child {
+    overflow: auto;
+}
+
+#menuOptions {
+    list-style: none;
+}
+
+#menuOptions>li {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 16px;
+    cursor: pointer;
+    color: rgb(55, 54, 54);
+}
+
+#menuOptions>li:hover {
+    text-decoration: underline;
+}
+
+#menu>div:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menuImg>img {
+    width: 85%;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

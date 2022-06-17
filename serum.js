@@ -393,5 +393,15 @@ if (cartDataLS.length > 0) {
 }
 
 
+// New Update V2.0
+document.querySelector('#menuButton').addEventListener('click',toggle)
 
+function toggle(){
+    let x = document.querySelector('#menu')
+    if(x.style.display=='grid'){
+        x.style.display='none'
+    }else{
+        x.style.display='grid'
+    }
+}
 
