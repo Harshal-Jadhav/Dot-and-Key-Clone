@@ -6,8 +6,9 @@ function home() {
     window.location.href = 'index.html'
 }
 // functin for cart page redirection
-cartDataLS = JSON.parse(localStorage.getItem('cartData')) || []
+
 function cart() {
+    cartDataLS = JSON.parse(localStorage.getItem('cartData')) || []
     if (cartDataLS.length === 0) {
         window.location.href = 'emptyCart.html'
     } else {

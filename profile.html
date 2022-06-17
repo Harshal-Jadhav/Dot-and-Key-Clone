@@ -220,23 +220,34 @@
         
         #middiv {
             margin: auto;
-            width: 250px;
+            /* width: 250px; */
             height: 100px;
             margin-top: 50px;
+            /* border: 1px solid; */
+            text-align: center;
         }
         
         #middiv>h1 {
-            text-align: center;
+            /* text-align: center; */
             font-weight: 700;
         }
         
         #middiv>button {
-            margin-left: 90px;
+            /* width: 100px; */
+            font-weight: 600;
+            cursor: pointer;
+            height: 30px;
+            font-size: 22px;
+            /* margin-left: 90px; */
             margin-top: 25px;
             border: none;
+            /* border: 1px solid; */
             border-radius: 5px;
             background-color: white;
-            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+            /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+        }
+        #middiv>button:hover{
+            text-decoration: underline;
         }
         
         #lastdiv {
@@ -258,6 +269,9 @@
             width: 20%;
             height: 150px;
             margin-top: 50px;
+        }
+        #userName{
+            font-size: 16px;
         }
     </style>
 </head>
@@ -297,16 +311,16 @@
 
     <div id="middiv">
         <h1>MY ACCOUNT</h1>
-        <button>Log out</button>
+        <button id="logOut">Log out</button>
     </div>
     <div id="lastdiv">
         <div>
             <h3>ORDER HISTORY</h3>
-            <P>you have'not placed order yet</P>
+            <p>you have'not placed order yet</p>
         </div>
         <div>
             <h3>Account details</h3>
-            <h6>name </h6>
+            <h6 id="userName">name </h6>
             <h6>ADDRESS(0)</h6>
         </div>
     </div>
@@ -362,22 +376,42 @@
 
 </html>
 <script>
-    document.querySelector('#centerLogo').addEventListener('click', home);
-    document.querySelector('#cart').addEventListener('click', cart);
-    document.querySelector('#profile').addEventListener('click', profile);
-    // function for home page redirection
-    function home() {
-        console.log('home page')
-            // window.location.href='index.html'
+    
+document.querySelector('#centerLogo').addEventListener('click', home);
+document.querySelector('#cart').addEventListener('click', cart);
+document.querySelector('#profile').addEventListener('click', profile);
+// function for home page redirection
+function home() {
+    window.location.href = 'index.html'
+}
+// functin for cart page redirection
+cartDataLS = JSON.parse(localStorage.getItem('cartData')) || []
+function cart() {
+    if (cartDataLS.length === 0) {
+        window.location.href = 'emptyCart.html'
+    } else {
+
+        window.location.href = 'cart.html'
     }
-    // functin for cart page redirection
-    function cart() {
-        console.log('cart page')
-            // window.location.href='cartPage.html'
+}
+// functin for profile page redirection
+loginLS = JSON.parse(localStorage.getItem('login')) || 0;
+function profile() {
+    if (loginLS == 0) {
+        window.location.href='signin.html'
+    } else {
+        
+        window.location.href='profile.html'
     }
-    // functin for profile page redirection
-    function profile() {
-        console.log('profile page')
-            // window.location.href='profilePage.html'
-    }
+}
+
+
+
+let name = localStorage.getItem('username')
+document.querySelector('#userName').innerText = name;
+
+
+
+
+
 </script>

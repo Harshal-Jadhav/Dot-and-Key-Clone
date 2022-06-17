@@ -8,25 +8,25 @@ let cartData = JSON.parse(localStorage.getItem("cartData")) || [];
 
 //This array of object is for all product detail and product image;
 
-let productData = [{ img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/1-Vit-C-Moisturizer-A_-Listing-NEW_e75ddb63-7d9e-4e71-bb35-0e050969a6b1_360x.jpg?v=1654856343", discount: 16, des: "VITAMIN C MOISTURIZER WITH KAKADU PLUM & VITAMIN E| FADES PIGMENTATION & DARK SPOTS| OILY & DRY SKIN| WOMEN...", highPrice: 595.00, price: 565.01,itemQty:1 },
+let productData = [{ img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/1-Vit-C-Moisturizer-A_-Listing-NEW_e75ddb63-7d9e-4e71-bb35-0e050969a6b1_360x.jpg?v=1654856343", discount: 16, des: "VITAMIN C MOISTURIZER WITH KAKADU PLUM & VITAMIN E| FADES PIGMENTATION & DARK SPOTS| OILY & DRY SKIN| WOMEN...", highPrice: 595.00, price: 565.01, itemQty: 1 },
 
-{ img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/CICANIGHTGEL_360x.jpg?v=1655302658", discount: 15, des: "CICA NIACINAMIDE NIGHT GEL WITH GREEN TEA, TEA TREE OIL & HYALURONIC| REDUCES ACNE & DARK SPOTS | OILY...", highPrice: 595.00, price: 565.01 ,itemQty:1},
+{ img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/CICANIGHTGEL_360x.jpg?v=1655302658", discount: 15, des: "CICA NIACINAMIDE NIGHT GEL WITH GREEN TEA, TEA TREE OIL & HYALURONIC| REDUCES ACNE & DARK SPOTS | OILY...", highPrice: 595.00, price: 565.01, itemQty: 1 },
 
-{ img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/PROBIOTICS_720x.jpg?v=1655302709", discount: 20, des: "72 HR HYDRATING PROBIOTIC GEL MOISTURIZER FOR FACE WITH HYALURONIC & RICE WATER| FOR...", highPrice: 745.00, price: 596.00 ,itemQty:1},
+{ img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/PROBIOTICS_720x.jpg?v=1655302709", discount: 20, des: "72 HR HYDRATING PROBIOTIC GEL MOISTURIZER FOR FACE WITH HYALURONIC & RICE WATER| FOR...", highPrice: 745.00, price: 596.00, itemQty: 1 },
 
-{ img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1_e423c2c9-3a60-4a5e-9bc0-b0526b7f3c01_360x.jpg?v=1655302612", discount: 30, des: "RETINOL & CERAMIDE AGE DEFENSE NIGHT CREAM FOR FACE| TREATS FINE LINES & WRINKLES | MATURE...", highPrice: 945.00, price: 662.00,itemQty:1 },
+{ img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1_e423c2c9-3a60-4a5e-9bc0-b0526b7f3c01_360x.jpg?v=1655302612", discount: 30, des: "RETINOL & CERAMIDE AGE DEFENSE NIGHT CREAM FOR FACE| TREATS FINE LINES & WRINKLES | MATURE...", highPrice: 945.00, price: 662.00, itemQty: 1 },
 
-{ img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/WATERMELONMOIST_360x.jpg?v=1655303303", discount: 15, des: "WATERMELON SUPER GLOW MATTE FACE CREAM WITH GLYCOLIC | MINIMIZES PORES & EVENS SKIN TONE|...", highPrice: 595.00, price: 506.00 ,itemQty:1},
+{ img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/WATERMELONMOIST_360x.jpg?v=1655303303", discount: 15, des: "WATERMELON SUPER GLOW MATTE FACE CREAM WITH GLYCOLIC | MINIMIZES PORES & EVENS SKIN TONE|...", highPrice: 595.00, price: 506.00, itemQty: 1 },
 
-{ img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-18_360x.jpg?v=1644916747", discount: 30, des: "AVOCADO SMOOTHIE DAY CREAM SPF 20", highPrice: 845.00, price: 592.00,itemQty:1 },
+{ img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-18_360x.jpg?v=1644916747", discount: 30, des: "AVOCADO SMOOTHIE DAY CREAM SPF 20", highPrice: 845.00, price: 592.00, itemQty: 1 },
 
-{ img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/day-night_1800x1800_1_360x.png?v=1628595712", discount: 20, des: "DAY & NIGHT CARE COMBO", highPrice: 1590.00, price: 1272.00,itemQty:1 },
+{ img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/day-night_1800x1800_1_360x.png?v=1628595712", discount: 20, des: "DAY & NIGHT CARE COMBO", highPrice: 1590.00, price: 1272.00, itemQty: 1 },
 
-{ img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/HandCream-L_360x.jpg?v=1638974908", discount: 10, des: "HAND CREAM + SANITIZER, LAVENDER", highPrice: 395.00, price: 356.00,itemQty:1 },
+{ img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/HandCream-L_360x.jpg?v=1638974908", discount: 10, des: "HAND CREAM + SANITIZER, LAVENDER", highPrice: 395.00, price: 356.00, itemQty: 1 },
 
-{ img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/HandCream-M_360x.jpg?v=1644916543", discount: 10, des: "HAND CREAM + SANITIZER, MANDARIN", highPrice: 395.00, price: 356.00,itemQty:1 },
+{ img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/HandCream-M_360x.jpg?v=1644916543", discount: 10, des: "HAND CREAM + SANITIZER, MANDARIN", highPrice: 395.00, price: 356.00, itemQty: 1 },
 
-{ img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/HandCream-Rose_360x.jpg?v=1644862602", discount: 10, des: "HAND CREAM + SANITIZER, ROSE", highPrice: 395.00, price: 356.00,itemQty:1 }
+{ img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/HandCream-Rose_360x.jpg?v=1644862602", discount: 10, des: "HAND CREAM + SANITIZER, ROSE", highPrice: 395.00, price: 356.00, itemQty: 1 }
 ];
 
 
@@ -151,8 +151,8 @@ function addtocart(ele) {
             alert("product is already in cart");
         }
     }
-    else{
-        window.location.href="signin.html"
+    else {
+        window.location.href = "signin.html"
     }
 }
 
@@ -224,23 +224,24 @@ function home() {
     window.location.href = 'index.html'
 }
 // functin for cart page redirection
-cartDataLS = JSON.parse(localStorage.getItem('cartData')) || []
-function cart() {
-    // if (cartDataLS.length != 0) {
-        // window.location.href = 'emptyCart.html'
-        window.location.href = 'cart.html'
-    // } else {
 
-        // window.location.href = 'emptyCart.html'
-    // }
+function cart() {
+    let cartDataLS = JSON.parse(localStorage.getItem('cartData')) || []
+    if (cartDataLS.length == 0) {
+        window.location.href = 'emptyCart.html'
+
+    } else {
+
+        window.location.href = 'cart.html'
+    }
 }
 // functin for profile page redirection
 loginLS = JSON.parse(localStorage.getItem('login')) || 0;
 function profile() {
     if (loginLS == 0) {
-        window.location.href='signin.html'
+        window.location.href = 'signin.html'
     } else {
-        
-        window.location.href='profile.html'
+
+        window.location.href = 'profile.html'
     }
 }

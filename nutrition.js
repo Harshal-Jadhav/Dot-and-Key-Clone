@@ -17,8 +17,8 @@ function cart() {
     }
 }
 // functin for profile page redirection
-loginLS = JSON.parse(localStorage.getItem('login')) || 0;
 function profile() {
+  loginLS = JSON.parse(localStorage.getItem('login')) || 0;
     if (loginLS == 0) {
         window.location.href='signin.html'
     } else {

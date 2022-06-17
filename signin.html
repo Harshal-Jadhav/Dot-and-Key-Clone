@@ -228,6 +228,7 @@
             color: white;
             border: none;
             border-radius: 5px;
+            cursor: pointer;
         }
 
         #google {
@@ -242,6 +243,7 @@
             margin-bottom: 15px;
             border: none;
             border-radius: 5px;
+            cursor: pointer;
         }
 
         .fbb {
@@ -279,21 +281,24 @@
         }
 
         #signin {
-            width: 85%;
+            width: 95%;
             margin: auto;
+            /* border: 1px solid; */
         }
 
-        #signin>p {
+        #signin>p:last-child {
             text-align: center;
         }
 
         #creat {
             width: 93%;
+            margin: auto;
             height: 35px;
             margin-top: 8px;
             background-color: rgb(60, 60, 60);
             color: white;
             border: none;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -342,7 +347,8 @@
             <input type="email" id="email">
             <p><label class="labell">PASSWORD</label></p>
             <input type="text" id="password">
-            <button id="creat">SINGIN</button>
+            <input type="submit" id="creat" value="Sign IN">
+            <!-- <button id="creat">SINGIN</button> -->
             <p>Don't have an account?<span style="color: rgb(20, 167, 225);">
                     <a href="signup.html">Sign up here.</a> </span></p>
         </form>
@@ -398,23 +404,33 @@
 
 </html>
 <script>
+
     document.querySelector('#centerLogo').addEventListener('click', home);
     document.querySelector('#cart').addEventListener('click', cart);
     document.querySelector('#profile').addEventListener('click', profile);
     // function for home page redirection
     function home() {
-        console.log('home page')
-        // window.location.href='index.html'
+        window.location.href = 'index.html'
     }
     // functin for cart page redirection
+    cartDataLS = JSON.parse(localStorage.getItem('cartData')) || []
     function cart() {
-        console.log('cart page')
-        // window.location.href='cartPage.html'
+        if (cartDataLS.length === 0) {
+            window.location.href = 'emptyCart.html'
+        } else {
+
+            window.location.href = 'cart.html'
+        }
     }
     // functin for profile page redirection
+    loginLS = JSON.parse(localStorage.getItem('login')) || 0;
     function profile() {
-        console.log('profile page')
-        // window.location.href='profilePage.html'
+        if (loginLS == 0) {
+            window.location.href = 'signin.html'
+        } else {
+
+            window.location.href = 'profile.html'
+        }
     }
 
 
@@ -426,7 +442,7 @@
     let form = document.querySelector('#signin');
     document.querySelector('#creat').addEventListener("click", submit);
     let userdata = JSON.parse(localStorage.getItem("userdata")) || [];
-    let loginLS = JSON.parse(localStorage.getItem("login")) || 0;
+    loginLS = JSON.parse(localStorage.getItem("login")) || 0;
     let usernameLS = JSON.parse(localStorage.getItem("username")) || 0;
     let usermail = JSON.parse(localStorage.getItem("usermail")) || 0;
 
@@ -445,6 +461,9 @@
             useremailLS = signinObj.email;
 
             localStorage.setItem("useremail", useremailLS);
+            let initials = usernameLS.split(' ')
+            let userInitial = initials[0][0] + initials[initials.length-1][0]
+            localStorage.setItem('userInitial',userInitial);
             window.location.href = 'index.html'
         } else {
             alert("wrong email and password");

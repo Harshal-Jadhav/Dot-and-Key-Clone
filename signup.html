@@ -264,6 +264,7 @@
         #singup>input {
             width: 350px;
             height: 35px;
+            font-size: 20px;
         }
         
         #singup>p {
@@ -277,8 +278,9 @@
         }
         
         #singup {
-            width: 85%;
+            width: 95%;
             margin: auto;
+            /* border: 1px solid; */
         }
         
         #submit {
@@ -288,6 +290,11 @@
             background-color: rgb(60, 60, 60);
             color: white;
             border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #submit:hover{
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -338,8 +345,8 @@
             <p><label class="labell">EMAIL</label></p>
             <input type="email" id="email">
             <p><label class="labell">PASSWORD</label></p>
-            <input type="text" id="password">
-            <button id="submit">CREAT</button>
+            <input type="password" id="password">
+            <button id="submit">Create Account</button>
         </form>
     </div>
 
@@ -393,24 +400,34 @@
 
 </html>
 <script>
-    document.querySelector('#centerLogo').addEventListener('click', home);
-    document.querySelector('#cart').addEventListener('click', cart);
-    document.querySelector('#profile').addEventListener('click', profile);
-    // function for home page redirection
-    function home() {
-        console.log('home page')
-            // window.location.href='index.html'
+    
+document.querySelector('#centerLogo').addEventListener('click', home);
+document.querySelector('#cart').addEventListener('click', cart);
+document.querySelector('#profile').addEventListener('click', profile);
+// function for home page redirection
+function home() {
+    window.location.href = 'index.html'
+}
+// functin for cart page redirection
+cartDataLS = JSON.parse(localStorage.getItem('cartData')) || []
+function cart() {
+    if (cartDataLS.length === 0) {
+        window.location.href = 'emptyCart.html'
+    } else {
+
+        window.location.href = 'cart.html'
     }
-    // functin for cart page redirection
-    function cart() {
-        console.log('cart page')
-            // window.location.href='cartPage.html'
+}
+// functin for profile page redirection
+loginLS = JSON.parse(localStorage.getItem('login')) || 0;
+function profile() {
+    if (loginLS == 0) {
+        window.location.href='signin.html'
+    } else {
+        
+        window.location.href='profile.html'
     }
-    // functin for profile page redirection
-    function profile() {
-        console.log('profile page')
-            // window.location.href='profilePage.html'
-    }
+}
 
 
     // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<signin js>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
