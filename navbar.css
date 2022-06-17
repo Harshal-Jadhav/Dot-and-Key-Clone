@@ -14,10 +14,11 @@ body {
 #navBar {
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 #navBar>div:first-child {
-    height: 35px;
+    height: 32px;
     background-color: #50504b;
     display: flex;
     justify-content: center;
@@ -36,6 +37,7 @@ body {
     padding: 10px 50px 10px 50px;
     border-bottom: 0.5px solid rgb(177, 177, 177);
     background-color: white;
+    height: 90px;
 }
 
 #navSearch {
@@ -72,7 +74,7 @@ body {
 }
 
 #nav-headSection2>img {
-    width: 125px;
+    /* width: 125px; */
     cursor: pointer;
 }
 
@@ -98,16 +100,17 @@ body {
 }
 
 #rewardButton {
-    width: 120px;
-    height: 50px;
+    width: 130px;
+    height: 60px;
     font-size: 20px;
-    border-radius: 15px;
+    border-radius: 40px;
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #8c73c9;
+    background-color: #ad97e5;
     color: white;
     border: none;
+    z-index: 90;
 }
 
 /* Footer style components */

@@ -22,11 +22,16 @@
 
 .products{
     padding: 30px 40px 60px;
+    display: grid;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
 }
 
 .checked {
     color: orange;
-   
   }
 
   .fa.fa-star{
@@ -35,22 +40,20 @@
   }
 
 
-  .products{
-    display: grid;
-    width: 80%;
-    margin: auto;
-    margin-top: 20px;
-    grid-template-columns: repeat(4,1fr);
-    gap: 30px;
+  .products>div{
+    position: relative;
+   
   }
   .products>div>img{
     width: 100%;
   }
  
-  .fa.fa-heart{
+  .heart{
     font-size: 22px;
     padding-right: 20px;
+    
   }
+ 
 
   .productName{
     font-size: 13px;
@@ -60,9 +63,33 @@
     margin-top:8px;
   }
   .footerSticky{
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 50px;
     position:fixed;
     bottom: 0px;
     background-color: rgb(243, 237, 237);
   }
+
+  .discountcard{
+    width: fit-content;
+    background-color: grey;
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+    padding: 5px 10px;
+    position:absolute;
+    right: 0px;
+  }
+  #sorting{
+    text-align: center;
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  #filtering{
+    text-align: center;
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  

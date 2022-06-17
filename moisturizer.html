@@ -56,7 +56,22 @@
     </div>
 
     <!-- This is for footer sticky for sorting and filtering funtionality -->
-    <div class="footerSticky"></div>
+    <div class="footerSticky">
+        <select id="sorting" onchange=changefunction()>
+            <option value="default">sort</option>
+            <option value="low">Price: Low to High</option>
+            <option value="high">Price: High to Low</option>
+            <option value="A">Name: A to Z</option>
+            <option value="Z">Name: Z to A</option>
+        </select>
+
+        <select  id="filtering">
+            <option value="default">Filter</option>
+            <option value="ss">Soft Skin</option>
+            <option value="nc">Night cream</option>
+            <option value="os">Oily Skin</option>
+        </select>
+    </div>
 
     <!-- Footer HTML Part -->
     <div id="footer">
