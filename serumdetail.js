@@ -1,24 +1,24 @@
 
 //   localStorage.setItem("detailpage",JSON.stringify("productdetail"))
-  let productdetailpage = JSON.parse(localStorage.getItem("detailpage"))
+let productdetailpage = JSON.parse(localStorage.getItem("detailpage"))
 
 console.log(productdetailpage)
 
 display(productdetailpage)
 
-function display(productdetailpage){
-    productdetailpage.forEach(function(elem){
-        
-        let productphoto = document.createElement("img")
-        productphoto.setAttribute("src",elem.img)
-        
-        let producttext = document.createElement("h2")
-        producttext.innerText =elem.des
+function display(productdetailpage) {
+    productdetailpage.forEach(function (elem) {
 
-       let price1 = document.createElement("span")
-       
-       document.querySelector("#productImage").append(productphoto)
-       document.querySelector("#productdescription").append(producttext)
+        let productphoto = document.createElement("img")
+        productphoto.setAttribute("src", elem.img)
+
+        let producttext = document.createElement("h2")
+        producttext.innerText = elem.des
+
+        let price1 = document.createElement("span")
+
+        document.querySelector("#productImage").append(productphoto)
+        document.querySelector("#productdescription").append(producttext)
 
     })
 
@@ -28,14 +28,6 @@ function display(productdetailpage){
 
 
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -64,16 +56,16 @@ function profile() {
 let personBtn = document.querySelector('#profile')
 if (loginLS == 1) {
     personBtn.innerText = localStorage.getItem('userInitial')
-    personBtn.setAttribute('class','initials')
+    personBtn.setAttribute('class', 'initials')
 } else {
     personBtn.innerText = 'person';
-    personBtn.setAttribute('class','material-symbols-outlined')
-    
+    personBtn.setAttribute('class', 'material-symbols-outlined')
+
 }
 let cartDataLS = JSON.parse(localStorage.getItem('cartData'))
 let mark = document.querySelector('#mark')
 if (cartDataLS.length > 0) {
-    mark.setAttribute('class','dotVisible')
+    mark.setAttribute('class', 'dotVisible')
 } else {
-    mark.setAttribute('class',"dotHidden")
+    mark.setAttribute('class', "dotHidden")
 }

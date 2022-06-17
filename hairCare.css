@@ -281,7 +281,8 @@ img {
     font-weight: 600;
     text-align: center;
 }
-.round>p{
+
+.round>p {
     margin-top: 0px;
 }
 
@@ -390,26 +391,30 @@ h5 {
 
 
 /* new Update */
-.initials{
+.initials {
     font-size: 20px;
     border: none;
     background-color: white;
     font-weight: 600;
     cursor: pointer;
 }
-.initials:hover{
+
+.initials:hover {
     color: rgb(220, 44, 73);
     text-decoration: underline;
 }
-.material-symbols-outlined{
+
+.material-symbols-outlined {
     border: none;
     background-color: white;
 }
-#cartshow{
+
+#cartshow {
     /* border: 1px solid; */
     position: relative;
 }
-.dotVisible{
+
+.dotVisible {
     /* display: none; */
     width: 12px;
     height: 12px;
@@ -419,6 +424,7 @@ h5 {
     bottom: 0;
     margin-left: 10px;
 }
-.dotHidden{
+
+.dotHidden {
     display: none;
 }

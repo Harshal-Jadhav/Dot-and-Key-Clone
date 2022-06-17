@@ -20,10 +20,10 @@ function cart() {
 loginLS = JSON.parse(localStorage.getItem('login')) || 0;
 function profile() {
     if (loginLS == 0) {
-        window.location.href='signin.html'
+        window.location.href = 'signin.html'
     } else {
-        
-        window.location.href='profile.html'
+
+        window.location.href = 'profile.html'
     }
 }
 
@@ -31,16 +31,16 @@ function profile() {
 let personBtn = document.querySelector('#profile')
 if (loginLS == 1) {
     personBtn.innerText = localStorage.getItem('userInitial')
-    personBtn.setAttribute('class','initials')
+    personBtn.setAttribute('class', 'initials')
 } else {
     personBtn.innerText = 'person';
-    personBtn.setAttribute('class','material-symbols-outlined')
-    
+    personBtn.setAttribute('class', 'material-symbols-outlined')
+
 }
 
 let mark = document.querySelector('#mark')
 if (cartDataLS.length > 0) {
-    mark.setAttribute('class','dotVisible')
+    mark.setAttribute('class', 'dotVisible')
 } else {
-    mark.setAttribute('class',"dotHidden")
+    mark.setAttribute('class', "dotHidden")
 }

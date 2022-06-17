@@ -252,16 +252,16 @@ function profile() {
 let personBtn = document.querySelector('#profile')
 if (loginLS == 1) {
     personBtn.innerText = localStorage.getItem('userInitial')
-    personBtn.setAttribute('class','initials')
+    personBtn.setAttribute('class', 'initials')
 } else {
     personBtn.innerText = 'person';
-    personBtn.setAttribute('class','material-symbols-outlined')
-    
+    personBtn.setAttribute('class', 'material-symbols-outlined')
+
 }
 let cartDataLS = JSON.parse(localStorage.getItem('cartData'))
 let mark = document.querySelector('#mark')
 if (cartDataLS.length > 0) {
-    mark.setAttribute('class','dotVisible')
+    mark.setAttribute('class', 'dotVisible')
 } else {
-    mark.setAttribute('class',"dotHidden")
+    mark.setAttribute('class', "dotHidden")
 }

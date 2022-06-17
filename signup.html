@@ -7,25 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>signup</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,200" />
     <style>
         body {
             margin: 0px;
             padding: 0px;
             font-family: sans-serif;
         }
-        
+
         .material-symbols-outlined {
             font-size: 30px;
             cursor: pointer;
         }
-        
+
         #navBar {
             position: sticky;
             z-index: 97;
             top: 0;
         }
-        
+
         #navBar>div:first-child {
             height: 35px;
             background-color: #50504b;
@@ -36,7 +37,7 @@
             font-weight: 700;
             color: white;
         }
-        
+
         #navBar>div:last-child {
             /* border: 1px solid; */
             display: grid;
@@ -47,7 +48,7 @@
             border-bottom: 0.5px solid rgb(177, 177, 177);
             background-color: white;
         }
-        
+
         #navSearch {
             display: flex;
             align-content: center;
@@ -56,7 +57,7 @@
             border: 1px solid gray;
             border-radius: 5px;
         }
-        
+
         #navSearch>input[type="search"] {
             border: none;
             background: transparent;
@@ -71,42 +72,42 @@
             font-size: 18px;
             height: 30px;
         }
-        
+
         #submitSearch {
             background-color: transparent;
             border-color: transparent;
         }
-        
+
         #nav-headSection2 {
             text-align: center;
         }
-        
+
         #nav-headSection2>img {
             width: 125px;
             cursor: pointer;
         }
-        
+
         #nav-headSection3 {
             padding-left: 20px;
             display: grid;
             grid-template-columns: 70% 20% 1%;
         }
-        
+
         #nav-headSection3>div:nth-child(2),
         #nav-headSection3>div:nth-child(3) {
             display: flex;
             justify-content: center;
         }
-        
+
         .material-symbols-outlined {
             padding-top: 3px;
         }
-        
+
         .nav-icon {
             background-color: transparent;
             border: transparent;
         }
-        
+
         #rewardButton {
             width: 120px;
             height: 50px;
@@ -119,8 +120,9 @@
             color: white;
             border: none;
         }
+
         /* Footer style components */
-        
+
         #footer {
             margin-top: 50px;
             display: grid;
@@ -129,42 +131,42 @@
             padding-top: 95px;
             border-top: 0.5px solid rgb(127, 126, 126);
         }
-        
+
         #footer>div>h1 {
             font-size: 20px;
             margin-bottom: 30px;
             color: rgb(41, 38, 38);
         }
-        
+
         #footer>div>p {
             font-size: 18px;
             font-weight: 100;
             margin-bottom: 20px;
             color: rgb(78, 78, 78);
         }
-        
+
         #footer>div>p:hover {
             text-decoration: underline;
         }
-        
+
         #footer>div:nth-child(3)>div:nth-child(2) {
             display: flex;
             align-content: center;
             justify-content: space-between;
         }
-        
+
         #footer>div:nth-child(3)>div:nth-child(3) {
             margin-top: 25px;
             font-size: 20px;
             font-weight: 600;
             color: rgb(56, 52, 52);
         }
-        
+
         #footer>div:nth-child(3)>div:nth-child(4) {
             display: flex;
             /* border: 1px solid; */
         }
-        
+
         #footer>div:nth-child(3)>div:nth-child(4)>p {
             display: inline;
             font-size: 17px;
@@ -172,7 +174,7 @@
             color: rgb(56, 52, 52);
             cursor: pointer;
         }
-        
+
         .fa {
             /* border: 1px solid; */
             /* padding-left: 10px; */
@@ -182,7 +184,7 @@
             text-align: center;
             text-decoration: none;
         }
-        
+
         .cr {
             font-size: 12px;
             display: flex;
@@ -190,11 +192,11 @@
             margin-right: 7px;
             margin-left: 0px;
         }
-        
+
         .fa:hover {
             opacity: 0.7;
         }
-        
+
         input[id=footerEmail] {
             width: 70%;
             height: 40px;
@@ -205,7 +207,7 @@
             color: rgb(56, 52, 52);
             ;
         }
-        
+
         #footerSubmit {
             width: 25%;
             height: 46px;
@@ -215,7 +217,7 @@
             border: none;
             cursor: pointer;
         }
-        
+
         #fb {
             background-color: rgb(221, 75, 57);
             width: 250px;
@@ -227,7 +229,7 @@
             border: none;
             border-radius: 5px;
         }
-        
+
         #google {
             background-color: rgb(66, 103, 178);
             width: 250px;
@@ -241,32 +243,32 @@
             border: none;
             border-radius: 5px;
         }
-        
+
         .fbb {
             color: white;
             padding-right: 35px;
             margin-left: -5px;
         }
-        
+
         .cc {
             color: white;
             padding-right: 35px;
             margin-left: -15px;
         }
-        
+
         .centerContainer {
             margin: auto;
             padding: 10px;
             text-align: center;
             width: 30%;
         }
-        
+
         #singup>input {
             width: 350px;
             height: 35px;
             font-size: 20px;
         }
-        
+
         #singup>p {
             font-size: 15px;
             text-align: left;
@@ -276,13 +278,13 @@
             font-weight: 600;
             color: rgb(75, 73, 73);
         }
-        
+
         #singup {
             width: 95%;
             margin: auto;
             /* border: 1px solid; */
         }
-        
+
         #submit {
             width: 93%;
             height: 35px;
@@ -293,7 +295,8 @@
             border-radius: 5px;
             cursor: pointer;
         }
-        #submit:hover{
+
+        #submit:hover {
             text-decoration: underline;
         }
     </style>
@@ -307,7 +310,8 @@
                 <button class="nav-icon"><span class="material-symbols-outlined">menu</span></button>
             </div>
             <div id="nav-headSection2">
-                <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/unnamed_250x_200x_2x_260x_24408e11-6e3a-4a0c-8327-74d0455f7696_260x@2x.jpg?v=1646547348" alt="" id="centerLogo">
+                <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/unnamed_250x_200x_2x_260x_24408e11-6e3a-4a0c-8327-74d0455f7696_260x@2x.jpg?v=1646547348"
+                    alt="" id="centerLogo">
             </div>
             <div id="nav-headSection3">
                 <form id="navSearch">
@@ -400,34 +404,34 @@
 
 </html>
 <script>
-    
-document.querySelector('#centerLogo').addEventListener('click', home);
-document.querySelector('#cart').addEventListener('click', cart);
-document.querySelector('#profile').addEventListener('click', profile);
-// function for home page redirection
-function home() {
-    window.location.href = 'index.html'
-}
-// functin for cart page redirection
-cartDataLS = JSON.parse(localStorage.getItem('cartData')) || []
-function cart() {
-    if (cartDataLS.length === 0) {
-        window.location.href = 'emptyCart.html'
-    } else {
 
-        window.location.href = 'cart.html'
+    document.querySelector('#centerLogo').addEventListener('click', home);
+    document.querySelector('#cart').addEventListener('click', cart);
+    document.querySelector('#profile').addEventListener('click', profile);
+    // function for home page redirection
+    function home() {
+        window.location.href = 'index.html'
     }
-}
-// functin for profile page redirection
-loginLS = JSON.parse(localStorage.getItem('login')) || 0;
-function profile() {
-    if (loginLS == 0) {
-        window.location.href='signin.html'
-    } else {
-        
-        window.location.href='profile.html'
+    // functin for cart page redirection
+    cartDataLS = JSON.parse(localStorage.getItem('cartData')) || []
+    function cart() {
+        if (cartDataLS.length === 0) {
+            window.location.href = 'emptyCart.html'
+        } else {
+
+            window.location.href = 'cart.html'
+        }
     }
-}
+    // functin for profile page redirection
+    loginLS = JSON.parse(localStorage.getItem('login')) || 0;
+    function profile() {
+        if (loginLS == 0) {
+            window.location.href = 'signin.html'
+        } else {
+
+            window.location.href = 'profile.html'
+        }
+    }
 
 
     // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<signin js>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -458,7 +462,7 @@ function profile() {
 
 
     function checkemail(email) {
-        let filter = userdata.filter(function(ele) {
+        let filter = userdata.filter(function (ele) {
             return email = ele.email;
 
         })

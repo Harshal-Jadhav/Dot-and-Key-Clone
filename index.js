@@ -3,7 +3,7 @@ document.querySelector('#haircare').addEventListener('click', function () { wind
 document.querySelector('#moisturizer').addEventListener('click', function () { window.location.href = 'moisturizer.html' })
 document.querySelector('#nutrition').addEventListener('click', function () { window.location.href = 'nutrition.html' })
 document.querySelector('#serum').addEventListener('click', function () { window.location.href = 'serum.html' })
-document.querySelector('#slideMoist').addEventListener('click',function(){window.location.href='moisturizer.html'})
+document.querySelector('#slideMoist').addEventListener('click', function () { window.location.href = 'moisturizer.html' })
 
 
 // JS for slider 1
