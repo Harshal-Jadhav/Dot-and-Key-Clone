@@ -346,7 +346,7 @@
                 price.innerText = el.updatePrice
             }
             quantity.addEventListener('change', function () {
-                console.log(cartItemLS)
+                // console.log(cartItemLS)
                 updatePrice = newPrice(cartItemLS, index, Number(quantity.value));
                 el.updatePrice = updatePrice;
                 price.innerText = updatePrice;
@@ -375,9 +375,9 @@
         cartItemLS.splice(index, 1);
         localStorage.setItem('cartData', JSON.stringify(cartItemLS));
         window.location.reload();
-        displayItems(cartItemLS);
-        Total(cartItemLS);
-        Discount(total);
+        // displayItems(cartItemLS);
+        // Total(cartItemLS);
+        // Discount(total);
     }
 
     function Total(cartItemLS) {
