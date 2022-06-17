@@ -8,9 +8,14 @@ function home() {
     window.location.href = 'index.html'
 }
 // functin for cart page redirection
+cartDataLS = JSON.parse(localStorage.getItem('cartData')) || []
 function cart() {
-    console.log('cart page')
-    window.location.href = 'cart.html'
+    if (cartDataLS.length === 0) {
+        window.location.href = 'emptyCart.html'
+    } else {
+
+        window.location.href = 'cart.html'
+    }
 }
 // functin for profile page redirection
 function profile() {

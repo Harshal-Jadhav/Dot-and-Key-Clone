@@ -155,11 +155,14 @@ newArrivals.forEach(function (el) {
     card.append(img, rating, des, strikeoff, price, cart)
     document.querySelector('#newArrivals').append(card);
 })
-
+let cartDataLS = JSON.parse(localStorage.getItem('cartData')) || [];
+let loginLS = JSON.parse(localStorage.getItem('login')) || 0;
 function addtoCart(el) {
-    let cartDataLS = JSON.parse(localStorage.getItem('cartData')) || [];
-    cartDataLS.push(el)
-    localStorage.setItem('cartData', JSON.stringify(cartDataLS));
-
+    if (loginLS == 1) {
+        cartDataLS.push(el)
+        localStorage.setItem('cartData', JSON.stringify(cartDataLS));
+    } else {
+        alert('login first')
+    }
 
 }
