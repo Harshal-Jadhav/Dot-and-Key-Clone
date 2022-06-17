@@ -134,6 +134,7 @@
   font-weight: 100;
   margin-bottom: 20px;
   color: white;
+  cursor: pointer;
 }
 
 #footer > div > p:hover {
@@ -225,6 +226,7 @@ input[id="footerEmail"] {
 #carsur {
   width: 100%;
   position: relative;
+  cursor: pointer;
 }
 #carsur > img {
   width: 100%;
@@ -399,4 +401,7 @@ h6 {
 .check{
   color: orange;
   width: fit-content;
+}
+.checked{
+  font-size: 30px;
 }
