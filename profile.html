@@ -277,6 +277,123 @@
         #userName {
             font-size: 16px;
         }
+
+        /* new Update */
+        .initials {
+            font-size: 20px;
+            border: none;
+            background-color: white;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .initials:hover {
+            color: rgb(220, 44, 73);
+            text-decoration: underline;
+        }
+
+        .material-symbols-outlined {
+            border: none;
+            background-color: white;
+        }
+
+        #cartshow {
+            /* border: 1px solid; */
+            position: relative;
+        }
+
+        .dotVisible {
+            /* display: none; */
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: red;
+            position: absolute;
+            bottom: 0;
+            margin-left: 10px;
+        }
+
+        .dotHidden {
+            display: none;
+        }
+
+        /* New Update v2.0 */
+        #menu {
+            border: 1px solid gray;
+            /* width: 80%; */
+            margin: auto;
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            display: none;
+            z-index: 1;
+            position: fixed;
+            bottom: 50;
+            right: 10;
+            background-color: white;
+            border-radius: 16px;
+        }
+
+        body {
+            position: relative;
+        }
+
+        #menu>div {
+            height: 350px;
+            /* border: 1px solid red; */
+        }
+
+        #menu>div:first-child {
+            overflow: auto;
+        }
+
+        #menuOptions {
+            list-style: none;
+        }
+
+        #menuOptions>li {
+            font-family: sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 16px;
+            cursor: pointer;
+            color: rgb(55, 54, 54);
+        }
+
+        #menuOptions>li:hover {
+            text-decoration: underline;
+        }
+
+        #menu>div:last-child {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #menuImg>img {
+            width: 85%;
+        }
+
+        /* width */
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
     </style>
 </head>
 
@@ -297,7 +414,8 @@
                     <input type="search" name="search-bar" id="search-bar" placeholder="Search">
                     <button id="submitSearch"></button>
                 </form>
-                <div>
+                <div id="cartshow">
+                    <div id="mark"></div>
                     <button id="cart" class="nav-icon">
                         <span class="material-symbols-outlined">shopping_bag</span>
                     </button>
@@ -437,8 +555,45 @@
     let name = localStorage.getItem('username')
     document.querySelector('#userName').innerText = name;
 
+    // New Update
+    let personBtn = document.querySelector('#profile')
+    if (loginLS == 1) {
+        personBtn.innerText = localStorage.getItem('userInitial')
+        personBtn.setAttribute('class', 'initials')
+    } else {
+        personBtn.innerText = 'person';
+        personBtn.setAttribute('class', 'material-symbols-outlined')
+
+    }
+
+    let mark = document.querySelector('#mark')
+    if (cartDataLS.length > 0) {
+        mark.setAttribute('class', 'dotVisible')
+    } else {
+        mark.setAttribute('class', "dotHidden")
+    }
+
+    // New Update V2.0
+    document.querySelector('#menuButton').addEventListener('click', toggle)
+
+    function toggle() {
+        let x = document.querySelector('#menu')
+        if (x.style.display == 'grid') {
+            x.style.display = 'none'
+        } else {
+            x.style.display = 'grid'
+        }
+    }
 
 
+    document.querySelector('#logOut').addEventListener('click', logOut);
 
+    function logOut() {
+        localStorage.removeItem('login')
+        localStorage.removeItem('useremail')
+        localStorage.removeItem('username')
+        localStorage.removeItem('userInitial')
+        window.location.href = 'index.html'
+    }
 
 </script>
