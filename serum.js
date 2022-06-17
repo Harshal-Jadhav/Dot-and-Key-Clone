@@ -279,7 +279,8 @@ function addtocart(elem) {
     if (check(elem.des) == true) {
       addtocartarr.push(elem)
       localStorage.setItem("cartData", JSON.stringify(addtocartarr))
-      alert('addtocartarr')
+      alert('Product added to cart')
+      window.location.reload()
     }
     else {
       alert("Product already in cart")
@@ -296,7 +297,7 @@ function detail(elem) {
   let productdetail = []
   productdetail.push(elem)
   localStorage.setItem("detailpage", JSON.stringify(productdetail))
-  window.location = "http://127.0.0.1:5500/serumdetail.html"
+  window.location.href="serumdetail.html"
   console.log(productdetail)
 }
 
@@ -373,7 +374,23 @@ function profile() {
 
 
 
-
+// New Update
+let personBtn = document.querySelector('#profile')
+if (loginLS == 1) {
+    personBtn.innerText = localStorage.getItem('userInitial')
+    personBtn.setAttribute('class','initials')
+} else {
+    personBtn.innerText = 'person';
+    personBtn.setAttribute('class','material-symbols-outlined')
+    
+}
+let cartDataLS = JSON.parse(localStorage.getItem('cartData'))
+let mark = document.querySelector('#mark')
+if (cartDataLS.length > 0) {
+    mark.setAttribute('class','dotVisible')
+} else {
+    mark.setAttribute('class',"dotHidden")
+}
 
 
 

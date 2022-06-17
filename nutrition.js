@@ -7,7 +7,7 @@ function home() {
     window.location.href = 'index.html'
 }
 // functin for cart page redirection
-cartDataLS = JSON.parse(localStorage.getItem('cartData')) || []
+let cartDataLS = JSON.parse(localStorage.getItem('cartData')) || []
 function cart() {
     if (cartDataLS.length === 0) {
         window.location.href = 'emptyCart.html'
@@ -58,3 +58,21 @@ buttons[1].addEventListener("click", function () {
   img.src = imgArr[imgN];
 });
 
+// New Update
+let loginLS = localStorage.getItem('login') || 0
+let personBtn = document.querySelector('#profile')
+if (loginLS == 1) {
+    personBtn.innerText = localStorage.getItem('userInitial')
+    personBtn.setAttribute('class','initials')
+} else {
+    personBtn.innerText = 'person';
+    personBtn.setAttribute('class','material-symbols-outlined')
+    
+}
+cartDataLS = JSON.parse(localStorage.getItem('cartData'))
+let mark = document.querySelector('#mark')
+if (cartDataLS.length > 0) {
+    mark.setAttribute('class','dotVisible')
+} else {
+    mark.setAttribute('class',"dotHidden")
+}

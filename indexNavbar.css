@@ -206,3 +206,36 @@ input[id=footerEmail] {
     border: none;
     cursor: pointer;
 }
+/* new Update */
+.initials{
+    font-size: 20px;
+    border: none;
+    background-color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+.initials:hover{
+    color: rgb(220, 44, 73);
+    text-decoration: underline;
+}
+.material-symbols-outlined{
+    border: none;
+    background-color: white;
+}
+#cartshow{
+    /* border: 1px solid; */
+    position: relative;
+}
+.dotVisible{
+    /* display: none; */
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    margin-left: 10px;
+}
+.dotHidden{
+    display: none;
+}

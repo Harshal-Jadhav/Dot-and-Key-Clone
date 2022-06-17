@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your cart</title>
     <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,200" />
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,200" />
     <link rel="stylesheet" href="indexNavbar.css">
     <style>
         body {
@@ -245,7 +245,8 @@
                     <input type="search" name="search-bar" id="search-bar" placeholder="Search">
                     <button id="submitSearch"></button>
                 </form>
-                <div>
+                <div id="cartshow">
+                    <div id="mark"></div>
                     <button id="cart" class="nav-icon">
                         <span class="material-symbols-outlined">shopping_bag</span>
                     </button>
@@ -301,10 +302,10 @@
     document.addEventListener('visibilitychange', function () {
         if (document.hidden) { } else { window.location.reload(); }
     })
-    
+
     let cartItemLS = JSON.parse(localStorage.getItem('cartData')) || [];
 
-    
+
 
     document.querySelector('#checkout').addEventListener('click', checkout)
 
@@ -376,6 +377,9 @@
         cartItemLS.splice(index, 1);
         localStorage.setItem('cartData', JSON.stringify(cartItemLS));
         window.location.reload();
+        if (cartItemLS.length == 0) {
+            window.location.href = 'emptyCart.html'
+        }
         // displayItems(cartItemLS);
         // Total(cartItemLS);
         // Discount(total);

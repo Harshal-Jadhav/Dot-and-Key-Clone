@@ -161,6 +161,7 @@ function addtoCart(el) {
     if (loginLS == 1) {
         cartDataLS.push(el)
         localStorage.setItem('cartData', JSON.stringify(cartDataLS));
+        window.location.reload()
     } else {
         alert('login first')
     }

@@ -230,6 +230,7 @@ function addCart(element){
             cartDetail.push(element);
             localStorage.setItem("cartData",JSON.stringify(cartDetail));
             alert("Product Added To Cart");
+            window.location.reload()
         }
         else{
             alert("Product alreay in Cart");

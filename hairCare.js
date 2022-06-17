@@ -202,6 +202,7 @@ function addtoCart(ele) {
     if (loginLS) {
         if (check(ele.des) === true) {
             cartDetail.push(ele);
+            window.location.reload()
             localStorage.setItem("cartData", JSON.stringify(cartDetail));
         }
 
@@ -220,4 +221,23 @@ function check(element) {
     } else {
         return true;
     }
+}
+
+
+// New Update
+let personBtn = document.querySelector('#profile')
+if (loginLS == 1) {
+    personBtn.innerText = localStorage.getItem('userInitial')
+    personBtn.setAttribute('class','initials')
+} else {
+    personBtn.innerText = 'person';
+    personBtn.setAttribute('class','material-symbols-outlined')
+    
+}
+let cartDataLS = JSON.parse(localStorage.getItem('cartData'))
+let mark = document.querySelector('#mark')
+if (cartDataLS.length > 0) {
+    mark.setAttribute('class','dotVisible')
+} else {
+    mark.setAttribute('class',"dotHidden")
 }

@@ -57,3 +57,23 @@ function profile() {
     console.log('profile page')
     // window.location.href='profilePage.html'
 }
+
+
+
+// New Update
+let personBtn = document.querySelector('#profile')
+if (loginLS == 1) {
+    personBtn.innerText = localStorage.getItem('userInitial')
+    personBtn.setAttribute('class','initials')
+} else {
+    personBtn.innerText = 'person';
+    personBtn.setAttribute('class','material-symbols-outlined')
+    
+}
+let cartDataLS = JSON.parse(localStorage.getItem('cartData'))
+let mark = document.querySelector('#mark')
+if (cartDataLS.length > 0) {
+    mark.setAttribute('class','dotVisible')
+} else {
+    mark.setAttribute('class',"dotHidden")
+}
