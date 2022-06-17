@@ -1,22 +1,31 @@
+
 document.querySelector('#centerLogo').addEventListener('click', home);
 document.querySelector('#cart').addEventListener('click', cart);
 document.querySelector('#profile').addEventListener('click', profile);
 // function for home page redirection
 function home() {
-    console.log('home page')
-        // window.location.href='index.html'
+    window.location.href = 'index.html'
 }
 // functin for cart page redirection
+cartDataLS = JSON.parse(localStorage.getItem('cartData')) || []
 function cart() {
-    console.log('cart page')
-        // window.location.href='cartPage.html'
+    if (cartDataLS.length === 0) {
+        window.location.href = 'emptyCart.html'
+    } else {
+
+        window.location.href = 'cart.html'
+    }
 }
 // functin for profile page redirection
+let loginLS = JSON.parse(localStorage.getItem('login')) || 0;
 function profile() {
-    console.log('profile page')
-        // window.location.href='profilePage.html'
+    if (loginLS == 0) {
+        window.location.href='signin.html'
+    } else {
+        
+        window.location.href='profile.html'
+    }
 }
-
 
 
 // product  haircare javascript part>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -185,7 +194,7 @@ hairCareArr.forEach(function(ele) {
     box.append(avatar, star, rating, name, price, cart);
     document.querySelector("#headingPro").append(box);
 });
-let loginLS = JSON.parse(localStorage.getItem('login')) || 0;
+    loginLS = JSON.parse(localStorage.getItem('login')) || 0;
 let cartDetail = JSON.parse(localStorage.getItem("cartData")) || [];
 
 function addtoCart(ele) {

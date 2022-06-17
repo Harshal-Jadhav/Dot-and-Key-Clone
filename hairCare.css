@@ -250,12 +250,15 @@ img {
     justify-content: space-around;
     align-items: center;
     background-color: rgb(211, 227, 228);
+    border-radius: 10px;
 }
 
 #threepic>div {
     width: 15%;
     height: 70%;
     background-color: white;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
 }
 
 .three {
@@ -277,6 +280,9 @@ img {
     font-size: 12px;
     font-weight: 600;
     text-align: center;
+}
+.round>p{
+    margin-top: 0px;
 }
 
 #threepic>div>h3 {
@@ -317,7 +323,7 @@ img {
 
 #iner>div>h3,
 p {
-    margin-top: 65px;
+    margin-top: 50px;
 }
 
 #iner>div>p {

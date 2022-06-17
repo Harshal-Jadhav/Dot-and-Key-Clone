@@ -1,3 +1,4 @@
+/* nav bar style componens */
 
 body {
     margin: 0px;
@@ -6,23 +7,23 @@ body {
 }
 
 .material-symbols-outlined {
-    font-size: 50px;
+    font-size: 30px;
     cursor: pointer;
 }
 
 #navBar {
     position: sticky;
     top: 0;
-    z-index:97;
+    z-index: 97;
 }
 
 #navBar>div:first-child {
-    height: 50px;
+    height: 35px;
     background-color: #50504b;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 700;
     color: white;
 }
@@ -72,7 +73,7 @@ body {
 }
 
 #nav-headSection2>img {
-    width: 375px;
+    width: 125px;
     cursor: pointer;
 }
 
@@ -89,7 +90,7 @@ body {
 }
 
 .material-symbols-outlined {
-    padding-top: 5px;
+    padding-top: 3px;
 }
 
 .nav-icon {
@@ -193,7 +194,7 @@ input[id=footerEmail] {
     border-bottom: 2px solid rgb(56, 52, 52);
     font-size: 16px;
     color: rgb(56, 52, 52);
-    ;
+    text-align: center;
 }
 
 #footerSubmit {
