@@ -226,7 +226,7 @@ let login=JSON.parse(localStorage.getItem("login"))||0;
 let cartDetail=JSON.parse(localStorage.getItem("cartData"))||[]||null;
 function addCart(element){
     if(login===1){
-        if(check(element.prodName)===true){
+        if(check(element.des)===true){
             cartDetail.push(element);
             localStorage.setItem("cartData",JSON.stringify(cartDetail));
             alert("Product Added To Cart");
@@ -241,7 +241,7 @@ function addCart(element){
 }
 function check(element){
     let result=cartDetail.filter(function(ele){
-        return ele.prodName===element;
+        return ele.des===element;
     })
     if(result.length>0){
         return false;
