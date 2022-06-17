@@ -1,5 +1,5 @@
 bodyScrub=[{
-    img:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-14.jpg?v=1646477249",
+    img:"image/scrub1.jpg",
     rating:"4.7/5",
     person:"(26)",
     des:"Vitamin C & Avalon Lemon",
@@ -9,7 +9,7 @@ bodyScrub=[{
     itemQty:1,
     dis:"SAVE 10%",
 },
-{   img:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-13.jpg?v=1646477177",
+{   img:"image/scrub2.jpg",
     rating:"4.7/5",
     person:"(26)",
     des:"Damask Rose & Lavender",
@@ -21,7 +21,7 @@ bodyScrub=[{
 }];
 
 serumLotions=[{
-    img:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-3_5_1f30698f-72cf-4165-8bca-302aa29817e2.jpg?v=1646477193",
+    img:"image/lotion1.jpg",
     rating:"4.7/5",
     person:"(26)",
     des:"Damask Rose & Lavender",
@@ -31,7 +31,7 @@ serumLotions=[{
     itemQty:1,
     dis:"SAVE 10%",
 },
-{   img:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-11_2.jpg?v=1646477397",
+{   img:"image/lotion2.jpg",
     rating:"4.7/5",
     person:"(26)",
     des:"Avalon Lemon & Verbena",
@@ -43,7 +43,7 @@ serumLotions=[{
 }];
 
 bodyButter=[{
-    img:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-6.jpg?v=1644862704",
+    img:"image/butter1.jpg",
     rating:"5.0/5",
     person:"(35)",
     des:"Cocoal & French Vanilla",
@@ -53,7 +53,7 @@ bodyButter=[{
     itemQty:1,
     dis:"SAVE 10%",
 },
-{   img:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/1_2.png?v=1644862556",
+{   img:"image/butter2.jpg",
     rating:"4.9/5",
     person:"(35)",
     des:"Lavender",
@@ -63,7 +63,7 @@ bodyButter=[{
     itemQty:1,
     dis:"SAVE 10%",
 },
-{   img:"https://cdn.shopify.com/s/files/1/0361/8553/8692/files/long_3.png?v=1646650083",
+{   img:"image.butter3.jpg",
     rating:"4.8/5",
     person:"(26)",
     des:"Avalon Lemon & Vitamin C",
@@ -75,7 +75,7 @@ bodyButter=[{
 }];
 
 ourCombos=[{
-    img:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/3_8.jpg?v=1643717568",
+    img:"image/combo1.jpg",
     rating:"5.0/5",
     person:"(10)",
     des:"Citrus Crush Combo",
@@ -85,7 +85,7 @@ ourCombos=[{
     itemQty:1,
     dis:"SAVE 10%",
 },
-{   img:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/2_9.jpg?v=1643714860",
+{   img:"image/combo2.jpg",
     rating:"4.9/5",
     person:"(35)",
     des:"Rosy Affair Combo",
@@ -95,7 +95,7 @@ ourCombos=[{
     itemQty:1,
     dis:"SAVE 10%",
 },
-{   img:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/1_7.jpg?v=1643713066",
+{   img:"image/combo3.jpg",
     rating:"5.0/5",
     person:"(7)",
     des:"Soft and Glow Combo",
