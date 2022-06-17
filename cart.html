@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your cart</title>
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,200" />
+    <link rel="stylesheet" href="indexNavbar.css">
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        h1 {
+            font-style: italic;
+            text-decoration: underline;
+            text-align: center;
+        }
+
+        #main {
+            /* border: 1px solid; */
+            width: 90%;
+            margin: auto;
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 100px;
+            position: relative;
+        }
+
+        #main>div:first-child {
+            position: relative;
+            height: 400px;
+            border-right: 1px solid gray;
+            padding-right: 50px;
+        }
+
+
+        #itemSection {
+            display: grid;
+            gap: 5px;
+        }
+
+        #card {
+            display: flex;
+            align-content: center;
+            align-items: center;
+            height: fit-content;
+            /* border: 1px solid; */
+            box-shadow: rgba(0, 0, 0, 0.086) 0px 1px 3px 0px, #1c2938 0px 0px 0px 1px;
+            border-radius: 10px;
+            padding-bottom: 5px;
+        }
+
+        #card>div:last-child {
+            padding-left: 10px;
+        }
+
+        #card>div>img {
+            /* border: 1px solid; */
+            width: 100px;
+            height: 100px;
+            border-radius: 8px;
+            padding: 2px;
+
+        }
+
+        #card>div>p:first-child {
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+
+        #card>div>p:nth-child(2) {
+            margin-top: 5px;
+            display: inline;
+        }
+
+        input[name='qty'] {
+            width: 15%;
+            height: 20px;
+            margin-top: 15px;
+            margin-left: 5px;
+            border: 1px solid #1c2938;
+            border-radius: 3px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        #card>div>button {
+            border: none;
+            margin-left: 5px;
+            background-color: #212121;
+            height: 25px;
+            border-radius: 3px;
+            color: white;
+            cursor: pointer;
+        }
+
+        #promoLable {
+            /* border: 1px solid; */
+            width: 60%;
+            margin: auto;
+        }
+
+        #promocode {
+            margin-top: 5px;
+            width: 68%;
+            height: 35px;
+            border-radius: 8px;
+            border: 1px solid #1c2938;
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        #applycode {
+            width: 27%;
+            height: 38px;
+            border: 1px solid #212121;
+            background-color: #212121;
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        #applycode:hover {
+            text-decoration: underline;
+        }
+
+        table {
+            width: 100%;
+            padding-left: 20px;
+            margin-top: 20px;
+            font-size: 22px;
+            font-weight: 200;
+            /* border: 1px solid; */
+        }
+
+        tr {
+            height: 50px;
+        }
+
+        td:nth-child(1) {
+            width: 30%;
+            text-decoration: underline;
+            font-style: italic;
+            font-weight: 600;
+        }
+
+        td:nth-child(3) {
+            color: #1c2938;
+            width: 85%;
+            font-size: 30px;
+            font-weight: 100;
+            height: 40px;
+            padding-left: 20px;
+            border-bottom: 1px solid;
+            display: flex;
+            justify-content: end;
+            align-items: flex-end;
+
+        }
+
+        #checkout {
+            width: 30%;
+            height: 50px;
+            border: 1px solid #616160;
+            background-color: #616160;
+            color: white;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            margin-right: 50px;
+            cursor: pointer;
+        }
+
+        #return {
+            width: 30%;
+            height: 50px;
+            border: none;
+            background-color: white;
+            color: #e13a50;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            cursor: pointer;
+        }
+
+        #return:hover {
+            text-decoration: underline;
+        }
+
+        #checkout:hover {
+            /* text-decoration: underline; */
+            background-color: #212121;
+        }
+
+        #logo {
+            text-align: center;
+            width: 80%;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+
+        #logo>img {
+            width: 50%;
+            border-bottom: 1px solid gray;
+        }
+
+        #itemSection {
+            height: 390px;
+            overflow: auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="navBar">
+        <div></div>
+        <div>
+            <div id="nav-headSection1">
+                <button class="nav-icon"><span class="material-symbols-outlined">menu</span></button>
+            </div>
+            <div id="nav-headSection2">
+                <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/unnamed_250x_200x_2x_260x_24408e11-6e3a-4a0c-8327-74d0455f7696_260x@2x.jpg?v=1646547348"
+                    alt="" id="centerLogo">
+            </div>
+            <div id="nav-headSection3">
+                <form id="navSearch">
+                    <span class="material-symbols-outlined">search</span>
+                    <input type="search" name="search-bar" id="search-bar" placeholder="Search">
+                    <button id="submitSearch"></button>
+                </form>
+                <div>
+                    <button id="cart" class="nav-icon">
+                        <span class="material-symbols-outlined">shopping_bag</span>
+                    </button>
+                </div>
+                <div>
+                    <button id="profile" class="nav-icon">
+                        <span class="material-symbols-outlined">person</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="main">
+        <div>
+            <div id="logo">
+                <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Dot_Key_Logo.png?138287" alt="">
+            </div>
+            <div id="promoLable">
+                <label for="promocode">Apply a PROMOCODE</label><br>
+                <input type="text" name="promocode" id="promocode" placeholder="Enter a Promocode">
+                <button id="applycode">Apply</button>
+            </div>
+            <table>
+                <tr>
+                    <td>Total value</td>
+                    <td>:</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Discount</td>
+                    <td>:</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Final price</td>
+                    <td>:</td>
+                    <td></td>
+                </tr>
+            </table>
+            <br>
+            <button id="checkout">Proceed to CheckOut</button>
+            <button id="return">
+                < Return to Home</button>
+        </div>
+        <div id="itemSection"></div>
+    </div>
+</body>
+
+</html>
+<script src="indexNavbar.js"></script>
+<script>
+    document.addEventListener('visibilitychange', function () {
+        if (document.hidden) { } else { window.location.reload(); }
+    })
+    let cartItemLS = JSON.parse(localStorage.getItem('cartData')) || [];
+
+    displayItems(cartItemLS)
+
+    document.querySelector('#checkout').addEventListener('click', checkout)
+
+    document.querySelector('#applycode').addEventListener('click', promocode);
+
+    function promocode() {
+        Total(cartItemLS);
+    }
+
+    function displayItems(cartItemsLS) {
+        document.querySelector('#itemSection').innerHTML = "";
+        cartItemLS.forEach(function (el, index) {
+            let box = document.createElement('div');
+            box.setAttribute('id', "card")
+            let imgStorage = document.createElement('div')
+            let img = document.createElement('img')
+            img.setAttribute('src', el.img)
+            imgStorage.append(img);
+            let div2 = document.createElement('div')
+            let name = document.createElement('p')
+            name.innerText = el.des;
+            let price = document.createElement('p');
+            price.innerText = el.price;
+            let span = document.createElement('span')
+            span.innerText = " Rs.";
+            let br = document.createElement('br');
+            let label = document.createElement('lable')
+            label.setAttribute('for', "qty");
+            label.innerText = 'Qty'
+            let quantity = document.createElement('input')
+            quantity.setAttribute('type', 'number');
+            quantity.setAttribute('name', 'qty');
+            quantity.setAttribute('id', 'qty');
+            quantity.setAttribute('min', 0);
+            quantity.setAttribute('value', (el.itemQty || 1));
+            if (quantity.value == 1) {
+                price.innerText = el.price;
+            }
+            else if (el.updatePrice) {
+                price.innerText = el.updatePrice
+            }
+            quantity.addEventListener('change', function () {
+                // console.log(cartItemLS)
+                updatePrice = newPrice(cartItemLS, index, Number(quantity.value));
+                el.updatePrice = updatePrice;
+                price.innerText = updatePrice;
+                localStorage.setItem('cartData', JSON.stringify(cartItemLS))
+            })
+            let Remove = document.createElement('button')
+            Remove.innerText = 'Remove';
+            Remove.addEventListener('click', function () {
+                del(cartItemLS, index)
+            })
+            div2.append(name, price, span, br, label, quantity, Remove)
+
+            box.append(imgStorage, div2);
+            document.querySelector('#itemSection').append(box);
+        })
+    }
+
+    function newPrice(cartItemLS, index, qty) {
+        cartItemLS[index].itemQty = qty;
+        localStorage.setItem('cartData', JSON.stringify(cartItemLS))
+        Total(cartItemLS);
+        return cartItemLS[index].itemQty * cartItemLS[index].price
+    }
+
+    function del(cartItemLS, index) {
+        cartItemLS.splice(index, 1);
+        localStorage.setItem('cartData', JSON.stringify(cartItemLS));
+        window.location.reload();
+        // displayItems(cartItemLS);
+        // Total(cartItemLS);
+        // Discount(total);
+    }
+
+    function Total(cartItemLS) {
+        let total = 0;
+        cartItemLS.forEach(function (el) {
+            total += el.price * el.itemQty;
+        })
+        document.querySelector('tr:nth-child(1)>td:nth-child(3)').innerText = total
+        Discount(total);
+    }
+
+    function Discount(total) {
+        let code = document.querySelector('#promocode').value;
+        let discount = 0;
+        if (code == 'masai30') {
+            discount = (total * 0.3);
+            document.querySelector('tr:nth-child(2)>td:nth-child(3)').innerText = discount.toFixed(2);
+        } else {
+            document.querySelector('tr:nth-child(2)>td:nth-child(3)').innerText = 0;
+        }
+        finalPrice(total, discount)
+    }
+
+    function finalPrice(total, discount) {
+        let finalPrice = (total - discount).toFixed(2);
+        document.querySelector('tr:nth-child(3)>td:nth-child(3)').innerText = finalPrice;
+        localStorage.setItem('finalPrice', finalPrice);
+    }
+
+    Total(cartItemLS);
+
+    function checkout() {
+        let finalPrice = localStorage.getItem('finalPrice')
+        if (finalPrice > 0) {
+            window.location.href = 'paymentPage.html'
+        } else {
+            alert('Lets Add Items in your Cart')
+        }
+
+    }
+
+
+</script>
