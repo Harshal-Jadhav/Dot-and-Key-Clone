@@ -1,89 +1,109 @@
 bodyScrub=[{
-    image:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-14.jpg?v=1646477249",
+    img:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-14.jpg?v=1646477249",
     rating:"4.7/5",
     person:"(26)",
-    prodName:"Vitamin C & Avalon Lemon",
+    des:"Vitamin C & Avalon Lemon",
     prodType:"Sugar Body Scrub",
     cancelPrice:"Rs.545",
-    prodPrice:490,
+    price:490,
+    itemQty:1,
+    dis:"SAVE 10%",
 },
-{   image:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-13.jpg?v=1646477177",
+{   img:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-13.jpg?v=1646477177",
     rating:"4.7/5",
     person:"(26)",
-    prodName:"Damask Rose & Lavender",
+    des:"Damask Rose & Lavender",
     prodType:"Gel Body Scrub",
     cancelPrice:"Rs.545",
-    prodPrice:490,
+    price:490,
+    itemQty:1,
+    dis:"SAVE 10%",
 }];
 
 serumLotions=[{
-    image:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-3_5_1f30698f-72cf-4165-8bca-302aa29817e2.jpg?v=1646477193",
+    img:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-3_5_1f30698f-72cf-4165-8bca-302aa29817e2.jpg?v=1646477193",
     rating:"4.7/5",
     person:"(26)",
-    prodName:"Damask Rose & Lavender",
+    des:"Damask Rose & Lavender",
     prodType:"Hydrating Hyaluronic Body Lotion",
     cancelPrice:"Rs.595",
-    prodPrice:535,
+    price:535,
+    itemQty:1,
+    dis:"SAVE 10%",
 },
-{   image:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-11_2.jpg?v=1646477397",
+{   img:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-11_2.jpg?v=1646477397",
     rating:"4.7/5",
     person:"(26)",
-    prodName:"Avalon Lemon & Verbena",
+    des:"Avalon Lemon & Verbena",
     prodType:"Vitamin C Glow Body Lotion",
     cancelPrice:"Rs.595",
-    prodPrice:535,
+    price:535,
+    itemQty:1,
+    dis:"SAVE 10%",
 }];
 
 bodyButter=[{
-    image:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-6.jpg?v=1644862704",
+    img:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-6.jpg?v=1644862704",
     rating:"5.0/5",
     person:"(35)",
-    prodName:"Cocoal & French Vanilla",
+    des:"Cocoal & French Vanilla",
     prodType:"Rich Body Butter with 10% SHEA",
     cancelPrice:"Rs.595",
-    prodPrice:535,
+    price:535,
+    itemQty:1,
+    dis:"SAVE 10%",
 },
-{   image:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/1_2.png?v=1644862556",
+{   img:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/1_2.png?v=1644862556",
     rating:"4.9/5",
     person:"(35)",
-    prodName:"Lavender",
+    des:"Lavender",
     prodType:"Butter with 5% SHEA",
     cancelPrice:"Rs.595",
-    prodPrice:535,
+    price:535,
+    itemQty:1,
+    dis:"SAVE 10%",
 },
-{   image:"https://cdn.shopify.com/s/files/1/0361/8553/8692/files/long_3.png?v=1646650083",
+{   img:"https://cdn.shopify.com/s/files/1/0361/8553/8692/files/long_3.png?v=1646650083",
     rating:"4.8/5",
     person:"(26)",
-    prodName:"Avalon Lemon & Vitamin C",
+    des:"Avalon Lemon & Vitamin C",
     prodType:"Yoghurt Glow Body Moisturizer",
     cancelPrice:"Rs.595",
-    prodPrice:535,
+    price:535,
+    itemQty:1,
+    dis:"SAVE 10%",
 }];
 
 ourCombos=[{
-    image:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/3_8.jpg?v=1643717568",
+    img:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/3_8.jpg?v=1643717568",
     rating:"5.0/5",
     person:"(10)",
-    prodName:"Citrus Crush Combo",
+    des:"Citrus Crush Combo",
     prodType:"",
     cancelPrice:"Rs.1140",
-    prodPrice:1026,
+    price:1026,
+    itemQty:1,
+    dis:"SAVE 10%",
 },
-{   image:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/2_9.jpg?v=1643714860",
+{   img:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/2_9.jpg?v=1643714860",
     rating:"4.9/5",
     person:"(35)",
-    prodName:"Rosy Affair Combo",
+    des:"Rosy Affair Combo",
     prodType:"",
     cancelPrice:"Rs.1140",
-    prodPrice:1026,
+    price:1026,
+    itemQty:1,
+    dis:"SAVE 10%",
 },
-{   image:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/1_7.jpg?v=1643713066",
+{   img:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/1_7.jpg?v=1643713066",
     rating:"5.0/5",
     person:"(7)",
-    prodName:"Soft and Glow Combo",
+    des:"Soft and Glow Combo",
     prodType:"",
     cancelPrice:"Rs.1140",
-    prodPrice:1026,
+    price:1026,
+    itemQty:1,
+    dis:"SAVE 10%",
 }]
 
 prod=[{
@@ -141,12 +161,16 @@ prod.forEach(function(ele){
         })
     }
 function display(element){
-    let prod=document.createElement("div");
-            prod.setAttribute("class","bodyProd");
+        let prod=document.createElement("div");
+        prod.setAttribute("class","bodyProd");
 
             let image=document.createElement("img");
             image.setAttribute("class","prodImage")
-            image.setAttribute("src", element.image);
+            image.setAttribute("src", element.img);
+
+            let discount=document.createElement("p");
+            discount.setAttribute("class","discount");
+            discount.innerText=element.dis;
 
             let ratRev=document.createElement("div");
                 let star=document.createElement("div");
@@ -167,22 +191,22 @@ function display(element){
 
             let prodNam=document.createElement("p");
             prodNam.setAttribute("class","prodName");
-            prodNam.innerText=element.prodName;
+            prodNam.innerText=element.des;
 
             let prodTyp=document.createElement("p");
             prodTyp.setAttribute("class","prodType");
             prodTyp.innerText=element.prodType;
 
-            let price=document.createElement("div");
-            price.setAttribute("class","price");
+            let prices=document.createElement("div");
+            prices.setAttribute("class","price");
                 let strikepric=document.createElement("span");
                 strikepric.setAttribute("class","strikeprice")
                 strikepric.innerText=element.cancelPrice;
 
                 let prodPric=document.createElement("p");
                 prodPric.setAttribute("class","prodPrice");
-                prodPric.innerText=element.prodPrice;
-                price.append(strikepric,prodPric);
+                prodPric.innerText=element.price;
+                prices.append(strikepric,prodPric);
 
             let btn=document.createElement("button");
             btn.setAttribute("class","button");
@@ -191,19 +215,28 @@ function display(element){
                 addCart(element);
             });
 
-            prod.append(image,ratRev,prodNam,prodTyp,price,btn);
+            prod.append(discount,image,ratRev,prodNam,prodTyp,prices,btn);
             main.append(prod);
 }
 
 
 document.querySelector(".bodyProd").append(ctnm,ctgr,slgn,main);
 })
-
+let login=JSON.parse(localStorage.getItem("login"))||0;
 let cartDetail=JSON.parse(localStorage.getItem("cartData"))||[]||null;
 function addCart(element){
-    if(check(element.prodName)===true){
-        cartDetail.push(element);
-        localStorage.setItem("cartData",JSON.stringify(cartDetail));
+    if(login===1){
+        if(check(element.prodName)===true){
+            cartDetail.push(element);
+            localStorage.setItem("cartData",JSON.stringify(cartDetail));
+            alert("Product Added To Cart");
+        }
+        else{
+            alert("Product alreay in Cart");
+        }
+    }
+    else{
+        window.location.href="signin.html";
     }
 }
 function check(element){

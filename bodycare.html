@@ -108,18 +108,19 @@
             font-family: roboto;
             
         }
-        .bodyprod{
+        .bodygroup{
             font-size: 30px;
             border-radius: 20px;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
         }
-        .bodyprod>img{
+        .bodygroup>p{
+            margin-bottom: 20px;
+        }
+        
+        .prodLink>img{
             width:100%;
             border-radius: 20px 20px 0px 0px;
             margin-bottom: -10px;
-        }
-        .bodyprod>p{
-            margin-bottom: 20px;
         }
         #third{
             width:90%;
@@ -132,7 +133,17 @@
         .bodyProd{
             text-align: center;
             margin-top: 80px;
-
+            position:relative;
+        }
+        .discount{
+            position:absolute;
+            right:0;
+            margin-top:0px;
+            font-size: 20px;
+            padding:5px 10px;
+            box-sizing: border-box;
+            background-color:darkgrey;
+            color:white;
         }
         .bodyProd>div{
             width:50%;
@@ -292,16 +303,22 @@
         <p>Just In</p>
         <h1>BODYCARE</h1>
         <div>
-            <div class="bodyprod">
-                <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/ROSE_2.png?v=1636617537">
+            <div class="bodygroup">
+                <a class="prodLink" href="">
+                    <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/ROSE_2.png?v=1636617537">
+                </a>
                 <p>Body<span style="font-style: italic; font-weight: 800;">Butter</span></p>
             </div>
-            <div class="bodyprod">
+            <div class="bodygroup">
+                <a class="prodLink" href="">
                 <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/0_1.png?v=1636623319">
+                </a>
                 <p>Serum<span style="font-style: italic; font-weight: 800;">Lotion</span></p>
             </div>
-            <div class="bodyprod">
+            <div class="bodygroup">
+                <a class="prodLink" href="">
                 <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/1.3_d0fb05cd-1610-4b66-ad0d-391d4aad2676.png?v=1636537323">
+                </a>
                 <p>Body<span style="font-style: italic; font-weight: 800;">Scrub</span></p>
             </div>
         </div>
