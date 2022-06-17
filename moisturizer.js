@@ -140,21 +140,21 @@ function display(productData) {
 
 
 //  add to cart function declearation ;
-// let loginLS = JSON.parse(localStorage.getItem("loginLS"));
-// function addtocart(ele) {
-//     if (loginLS) {
-//         if (checkproductdata(ele.des) == true) {
-//             cartData.push(ele);
-//             localStorage.setItem("cartData", JSON.stringify(cartData));
-//         }
-//         else {
-//             alert("product is already in cart");
-//         }
-//     }
-//     else{
-//         window.location.href="signin.html"
-//     }
-// }
+let loginLS = JSON.parse(localStorage.getItem("loginLS"));
+function addtocart(ele) {
+    if (loginLS) {
+        if (checkproductdata(ele.des) == true) {
+            cartData.push(ele);
+            localStorage.setItem("cartData", JSON.stringify(cartData));
+        }
+        else {
+            alert("product is already in cart");
+        }
+    }
+    else{
+        window.location.href="signin.html"
+    }
+}
 
 
 
@@ -164,7 +164,7 @@ function display(productData) {
 //This function is for check product is present in cart or not if product is persent in cart then dont add same product in cart else add one;
 function checkproductdata(name) {
     let filered = cartData.filter(function (element) {
-        return name === element.name;
+        return name === element.des;
     })
 
     if (filered.length > 0) {
@@ -226,12 +226,13 @@ function home() {
 // functin for cart page redirection
 cartDataLS = JSON.parse(localStorage.getItem('cartData')) || []
 function cart() {
-    if (cartDataLS.length === 0) {
-        window.location.href = 'emptyCart.html'
-    } else {
-
+    // if (cartDataLS.length != 0) {
+        // window.location.href = 'emptyCart.html'
         window.location.href = 'cart.html'
-    }
+    // } else {
+
+        // window.location.href = 'emptyCart.html'
+    // }
 }
 // functin for profile page redirection
 loginLS = JSON.parse(localStorage.getItem('login')) || 0;

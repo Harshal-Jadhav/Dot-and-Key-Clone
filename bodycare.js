@@ -223,7 +223,7 @@ function display(element){
 document.querySelector(".bodyProd").append(ctnm,ctgr,slgn,main);
 })
 let login=JSON.parse(localStorage.getItem("login"))||0;
-let cartDetail=JSON.parse(localStorage.getItem("cartData"))||[]||null;
+let cartDetail=JSON.parse(localStorage.getItem("cartData")) || [];
 function addCart(element){
     if(login===1){
         if(check(element.des)===true){

@@ -258,38 +258,38 @@ let productData=[
 
 
 
-// function check(name){
-// let cart = addtocartarr.filter(function(elem){
-//   return elem.des==name
-// })
-// if(cart.length>0){
-//   return false
-// }
-// else{
-//   return true
-// }
+function check(name){
+let cart = addtocartarr.filter(function(elem){
+  return elem.des==name
+})
+if(cart.length>0){
+  return false
+}
+else{
+  return true
+}
 
-// }
+}
 
-//   let addtocartarr = JSON.parse(localStorage.getItem("cartData")) || []
-//   let login  = JSON.parse(localStorage.getItem("login")) ||0
+  let addtocartarr = JSON.parse(localStorage.getItem("cartData")) || []
+  let login  = JSON.parse(localStorage.getItem("login")) ||0
 
-//   function addtocart(elem){
-//     if (login==1){
-//       if(check(elem.des)==true){
-//         addtocartarr.push(elem)
-//         localStorage.setItem("cartData",JSON.stringify(addtocartarr))
-//         console.log(addtocartarr)
-//       }
-//       else{
-//         alert("Product already in cart")
-//       }
-//     }
-//     else{
-//       window.location.href="signin.html"
-//     }
+  function addtocart(elem){
+    if (login==1){
+      if(check(elem.des)==true){
+        addtocartarr.push(elem)
+        localStorage.setItem("cartData",JSON.stringify(addtocartarr))
+        alert('addtocartarr')
+      }
+      else{
+        alert("Product already in cart")
+      }
+    }
+    else{
+      window.location.href="signin.html"
+    }
 
-//   }
+  }
 
 //    product detail
 function detail(elem){

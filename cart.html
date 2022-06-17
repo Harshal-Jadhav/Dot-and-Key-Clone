@@ -301,9 +301,10 @@
     document.addEventListener('visibilitychange', function () {
         if (document.hidden) { } else { window.location.reload(); }
     })
+    
     let cartItemLS = JSON.parse(localStorage.getItem('cartData')) || [];
 
-    displayItems(cartItemLS)
+    
 
     document.querySelector('#checkout').addEventListener('click', checkout)
 
@@ -312,7 +313,7 @@
     function promocode() {
         Total(cartItemLS);
     }
-
+    displayItems(cartItemLS)
     function displayItems(cartItemsLS) {
         document.querySelector('#itemSection').innerHTML = "";
         cartItemLS.forEach(function (el, index) {
