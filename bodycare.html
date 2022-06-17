@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BODY CARE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,200" />
+    <link rel="stylesheet" href="bodynavbar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+        
+        .button{
+            width:100%;
+            border:none;
+            padding:10px 20px;
+            background-color: #50504b;
+            color:white;
+            font-size: 20px;
+            transition-duration: 0.4s;
+        }
+        .button:hover{
+            background-color: #d0538c;
+            box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        }
+        .slideshow-container {
+            max-width: 100%;
+            position: relative;
+            margin: auto;
+        }
+        
+        .mySlides {
+            display: none;
+        }
+        .mySlides>img{
+            width:100%;
+        }
+
+            /* Next & previous buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: 30px;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 28px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+            /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+           
+        .prev:hover, .next:hover {
+            background-color: rgba(61, 61, 56, 0.5);
+            border-radius: 50%;
+        }
+
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+      
+        #second{
+            margin-top: 170px;
+            width:100%;
+        }
+        #second>img{
+            width:100%;
+        }
+        #justin{
+            width:60%;
+            margin:auto;
+            margin-top: 90px;
+            text-align: center;
+        }
+        #justin>h1{
+            font-style: italic;
+            font-size: 42px;
+            font-weight: 800;
+        }
+        #justin>p{
+            font-size: 45px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color:darkslategray;
+            margin-bottom: -30px;
+        }
+        #justin>div{
+            margin-top: 50px;
+            width:100%;
+            display:grid;
+            grid-template-columns:repeat(3,1fr);
+            justify-content: space-evenly;
+            gap:70px;
+            color:#3c3c3c;
+            font-family: roboto;
+            
+        }
+        .bodygroup{
+            font-size: 30px;
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        }
+        .bodygroup>p{
+            margin-bottom: 20px;
+        }
+        
+        .prodLink>img{
+            width:100%;
+            border-radius: 20px 20px 0px 0px;
+            margin-bottom: -10px;
+        }
+        #third{
+            width:90%;
+            margin:auto;
+            margin-top: 100px;
+        }
+        #third>img{
+            width:100%;
+        }
+        .bodyProd{
+            text-align: center;
+            margin-top: 80px;
+            position:relative;
+        }
+        .discount{
+            position:absolute;
+            right:0;
+            margin-top:0px;
+            font-size: 20px;
+            padding:5px 10px;
+            box-sizing: border-box;
+            background-color:darkgrey;
+            color:white;
+        }
+        .bodyProd>div{
+            width:50%;
+            margin: auto;
+            margin-top: 70px;
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            gap:80px;
+        }
+        .categoryName{
+            margin-top: 100px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 30px;
+            font-weight: 500;
+            color:#50504b
+        }
+        .category{
+            font-size: 40px;
+            font-style: italic;
+            font-weight: 500px;
+            margin-top: -20px;
+            color:#50504b
+        }
+        .slogan{
+            font-size: 22px;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 800;
+            letter-spacing: 3px;
+            color:#d0538c;
+            margin-top: -20px;
+            margin-bottom: -70px;
+        }
+        .prodImage{
+            margin-bottom: -70px;
+            width:100%;
+        }
+        .checked{
+            color:orange;
+        }
+        .prodName{
+            font-size: 20px;
+            font-style: 'Roboto',sans-serif;
+            font-weight:bolder;
+            margin-top: -10px;
+        }
+        .prodType{
+            font-size: 18px;
+            color:#3c3c3c;
+            margin-bottom: -80px;
+        }
+        .ratingrev{
+            padding:10px 30px 10px 35px;
+            display:flex;
+            justify-content:space-around; 
+            align-items:center;
+        }
+        .price{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+        .prodPrice{
+            color:#ff879c;
+            font-size: 20px;
+            font-weight: 700;
+            font-family: 'Roboto', sans-serif;
+            margin-left:-50px
+        }
+        .strikeprice{
+            text-decoration:line-through; 
+            color:darkslategray;
+            margin-right:-50px;
+        }
+        #video{
+            display: flex;
+            margin-top: 150px;
+        }
+        #video>div{
+            width:75%;
+        }
+        #video>img{
+            width:25%;
+        }
+        iframe{
+            height:800px;
+            width:100%;
+        }
+        </style>
+
+</head>
+
+<body>
+    <!-- Nab Bar HTML Part -->
+
+    <div id="navBar">
+        <div><u>Buy 2 Get 2 MINIS Free</u></div>
+        <div>
+            <div id="nav-headSection1">
+                <button class="nav-icon"><span class="material-symbols-outlined">menu</span></button>
+            </div>
+            <div id="nav-headSection2">
+                <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/unnamed_250x_200x_2x_260x_24408e11-6e3a-4a0c-8327-74d0455f7696_260x@2x.jpg?v=1646547348"
+                    alt="" id="centerLogo">
+            </div>
+            <div id="nav-headSection3">
+                <form id="navSearch">
+                    <span class="material-symbols-outlined">search</span>
+                    <input type="search" name="search-bar" id="search-bar" placeholder="Search">
+                    <button id="submitSearch"></button>
+                </form>
+                <div>
+                    <button id="cart" class="nav-icon">
+                        <span class="material-symbols-outlined">shopping_bag</span>
+                    </button>
+                </div>
+                <div>
+                    <button id="profile" class="nav-icon">
+                        <span class="material-symbols-outlined">person</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button id="rewardButton" class="fa rb fa-gift"> Rewards</button>
+
+    <!-- You can write your code here -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/body_02a0a071-1f0d-4be7-8587-02dd5e26b716.jpg?v=1655305990">
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/bodycare_desktop.png?v=1639668460">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/desk_home_4.png?v=1645176921">
+        </div>
+      
+        
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      
+
+    <div id="second">
+        <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/2-SPREAD-THE-LOVE-Desktop-Final_3.png?v=1638165803">
+    </div>
+
+    <div id="justin">
+        <p>Just In</p>
+        <h1>BODYCARE</h1>
+        <div>
+            <div class="bodygroup">
+                <a class="prodLink" href="">
+                    <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/ROSE_2.png?v=1636617537">
+                </a>
+                <p>Body<span style="font-style: italic; font-weight: 800;">Butter</span></p>
+            </div>
+            <div class="bodygroup">
+                <a class="prodLink" href="">
+                <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/0_1.png?v=1636623319">
+                </a>
+                <p>Serum<span style="font-style: italic; font-weight: 800;">Lotion</span></p>
+            </div>
+            <div class="bodygroup">
+                <a class="prodLink" href="">
+                <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/1.3_d0fb05cd-1610-4b66-ad0d-391d4aad2676.png?v=1636537323">
+                </a>
+                <p>Body<span style="font-style: italic; font-weight: 800;">Scrub</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="third">
+        <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/3-Model-Image-Desktop_2_1ac15045-7c83-4680-9bd8-6d5a5878a0c4.png?v=1636955347">
+    </div>
+
+    <div class="bodyProd">
+    <!-- All products are here with the help of JS -->
+    </div>
+
+
+    <div id="video">
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YuM30jM381M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/4-Revised-Youtube-Desktop.png?v=1638165848">
+    </div>
+    <!-- Footer HTML Part -->
+    <div id="footer">
+        <!-- Column 1 -->
+        <div>
+            <h1>GET TO KNOW US</h1>
+            <p>ABOUT US</p>
+            <p>CONTACT US</p>
+            <p>EARTHCARE</p>
+            <p>AFFILIATE PROGRAM</p>
+            <p>TERMS & CONDITIONS</p>
+            <p>REFUND & CANCELLATION</p>
+            <p>PRIVACY POLICY</p>
+            <p>ORDER & SHIPPING</p>
+            <p>PAYMENT TERMS</p>
+            <p>TERMS OF SERVICE</p>
+            <p>REFUND POLICY</p>
+        </div>
+
+        <!-- Column 2 -->
+        <div>
+            <h1>ALSO AVAILABLE ON</h1>
+            <p>NYKAA</p>
+            <p>AMAZON</p>
+            <p>FLIPKART</p>
+            <p>MYNTRA</p>
+        </div>
+
+        <!-- Column 3 -->
+        <div>
+            <h1>STAY UPDATED</h1>
+            <div>
+                <input type="text" name="footerEmail" id="footerEmail">
+                <button id="footerSubmit">SUBMIT</button>
+            </div>
+            <div>
+                <p>FOLLOW US
+                    <span class="fa fa-facebook"></span>
+                    <span class="fa fa-instagram"></span>
+                    <span class="fa fa-youtube"></span>
+                </p>
+            </div>
+            <div>
+                <span class="fa cr fa-copyright"></span>
+                <p>2022 Dot & Key</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script src="bodynavbar.js"></script>
+<script src="bodycare.js"></script>
