@@ -10,7 +10,7 @@ let cartData = JSON.parse(localStorage.getItem("cartData")) || [];
 
 let productData = [{ img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/1-Vit-C-Moisturizer-A_-Listing-NEW_e75ddb63-7d9e-4e71-bb35-0e050969a6b1_360x.jpg?v=1654856343", discount: 16, des: "VITAMIN C MOISTURIZER WITH KAKADU PLUM & VITAMIN E| FADES PIGMENTATION & DARK SPOTS| OILY & DRY SKIN| WOMEN...", highPrice: 595.00, price: 565.01, itemQty: 1 },
 
-{ img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/CICANIGHTGEL_360x.jpg?v=1655302658", discount: 15, des: "CICA NIACINAMIDE NIGHT GEL WITH GREEN TEA, TEA TREE OIL & HYALURONIC| REDUCES ACNE & DARK SPOTS | OILY...", highPrice: 595.00, price: 565.01, itemQty: 1 },
+{ img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/CICANIGHTGEL_3_360x.jpg?v=1655379818", discount: 15, des: "CICA NIACINAMIDE NIGHT GEL WITH GREEN TEA, TEA TREE OIL & HYALURONIC| REDUCES ACNE & DARK SPOTS | OILY...", highPrice: 595.00, price: 565.01, itemQty: 1 },
 
 { img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/PROBIOTICS_720x.jpg?v=1655302709", discount: 20, des: "72 HR HYDRATING PROBIOTIC GEL MOISTURIZER FOR FACE WITH HYALURONIC & RICE WATER| FOR...", highPrice: 745.00, price: 596.00, itemQty: 1 },
 
