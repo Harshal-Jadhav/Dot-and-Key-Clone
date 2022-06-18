@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,200" />
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+        }
+        
+        .material-symbols-outlined {
+            font-size: 30px;
+            cursor: pointer;
+        }
+        
+        #navBar {
+            position: sticky;
+            z-index: 97;
+            top: 0;
+        }
+        
+        #navBar>div:first-child {
+            height: 35px;
+            background-color: #50504b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
+            font-weight: 700;
+            color: white;
+        }
+        
+        #navBar>div:last-child {
+            /* border: 1px solid; */
+            display: grid;
+            grid-template-columns: 37% 23% 40%;
+            gap: 20px;
+            align-items: center;
+            padding: 10px 50px 10px 50px;
+            border-bottom: 0.5px solid rgb(177, 177, 177);
+            background-color: white;
+        }
+        
+        #navSearch {
+            display: flex;
+            align-content: center;
+            color: #555;
+            padding: 2px;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+        
+        #navSearch>input[type="search"] {
+            border: none;
+            background: transparent;
+            margin: 0;
+            padding: 0px 8px;
+            font-size: 14px;
+            color: inherit;
+            border: 1px solid transparent;
+            border-radius: inherit;
+            width: 100%;
+            outline: none;
+            font-size: 18px;
+            height: 30px;
+        }
+        
+        #submitSearch {
+            background-color: transparent;
+            border-color: transparent;
+        }
+        
+        #nav-headSection2 {
+            text-align: center;
+        }
+        
+        #nav-headSection2>img {
+            width: 125px;
+            cursor: pointer;
+        }
+        
+        #nav-headSection3 {
+            padding-left: 20px;
+            display: grid;
+            grid-template-columns: 70% 20% 1%;
+        }
+        
+        #nav-headSection3>div:nth-child(2),
+        #nav-headSection3>div:nth-child(3) {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .material-symbols-outlined {
+            padding-top: 3px;
+        }
+        
+        .nav-icon {
+            background-color: transparent;
+            border: transparent;
+        }
+        
+        #rewardButton {
+            width: 120px;
+            height: 50px;
+            font-size: 20px;
+            border-radius: 15px;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #8c73c9;
+            color: white;
+            border: none;
+        }
+        /* Footer style components */
+        
+        #footer {
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: 31.5% 31.5% 31.5%;
+            justify-content: center;
+            padding-top: 95px;
+            border-top: 0.5px solid rgb(127, 126, 126);
+        }
+        
+        #footer>div>h1 {
+            font-size: 20px;
+            margin-bottom: 30px;
+            color: rgb(41, 38, 38);
+        }
+        
+        #footer>div>p {
+            font-size: 18px;
+            font-weight: 100;
+            margin-bottom: 20px;
+            color: rgb(78, 78, 78);
+        }
+        
+        #footer>div>p:hover {
+            text-decoration: underline;
+        }
+        
+        #footer>div:nth-child(3)>div:nth-child(2) {
+            display: flex;
+            align-content: center;
+            justify-content: space-between;
+        }
+        
+        #footer>div:nth-child(3)>div:nth-child(3) {
+            margin-top: 25px;
+            font-size: 20px;
+            font-weight: 600;
+            color: rgb(56, 52, 52);
+        }
+        
+        #footer>div:nth-child(3)>div:nth-child(4) {
+            display: flex;
+            /* border: 1px solid; */
+        }
+        
+        #footer>div:nth-child(3)>div:nth-child(4)>p {
+            display: inline;
+            font-size: 17px;
+            /* border: 1px solid; */
+            color: rgb(56, 52, 52);
+            cursor: pointer;
+        }
+        
+        .fa {
+            /* border: 1px solid; */
+            /* padding-left: 10px; */
+            margin-left: 20px;
+            font-size: 25px;
+            width: 10px;
+            text-align: center;
+            text-decoration: none;
+        }
+        
+        .cr {
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            margin-right: 7px;
+            margin-left: 0px;
+        }
+        
+        .fa:hover {
+            opacity: 0.7;
+        }
+        
+        input[id=footerEmail] {
+            width: 70%;
+            height: 40px;
+            border: none;
+            outline: none;
+            border-bottom: 2px solid rgb(56, 52, 52);
+            font-size: 16px;
+            color: rgb(56, 52, 52);
+            ;
+        }
+        
+        #footerSubmit {
+            width: 25%;
+            height: 46px;
+            font-size: 16px;
+            color: white;
+            background-color: rgb(56, 52, 52);
+            border: none;
+            cursor: pointer;
+        }
+        
+        #fb {
+            background-color: rgb(221, 75, 57);
+            width: 250px;
+            height: 35px;
+            /* margin-left: 100px; */
+            font-weight: 400;
+            font-size: 18px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        
+        #google {
+            background-color: rgb(66, 103, 178);
+            width: 250px;
+            height: 35px;
+            /* margin-left: 100px; */
+            font-weight: 400;
+            font-size: 18px;
+            color: white;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+        }
+        
+        .fbb {
+            color: white;
+            padding-right: 35px;
+            margin-left: -5px;
+        }
+        
+        .cc {
+            color: white;
+            padding-right: 35px;
+            margin-left: -15px;
+        }
+        
+        .centerContainer {
+            margin: auto;
+            padding: 10px;
+            text-align: center;
+            width: 30%;
+        }
+        
+        #signin>input {
+            width: 350px;
+            height: 35px;
+        }
+        
+        #signin>p {
+            font-size: 15px;
+            text-align: left;
+            padding-left: 20px;
+            margin-bottom: 5px;
+            font-family: sans-serif;
+            font-weight: 600;
+            color: rgb(75, 73, 73);
+        }
+        
+        #signin {
+            width: 85%;
+            margin: auto;
+        }
+        
+        #signin>p {
+            text-align: center;
+        }
+        
+        #creat {
+            width: 93%;
+            height: 35px;
+            margin-top: 8px;
+            background-color: rgb(60, 60, 60);
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navBar">
+        <div><u>Buy 2 Get 2 MINIS Free</u></div>
+        <div>
+            <div id="nav-headSection1">
+                <button class="nav-icon"><span class="material-symbols-outlined">menu</span></button>
+            </div>
+            <div id="nav-headSection2">
+                <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/unnamed_250x_200x_2x_260x_24408e11-6e3a-4a0c-8327-74d0455f7696_260x@2x.jpg?v=1646547348" alt="" id="centerLogo">
+            </div>
+            <div id="nav-headSection3">
+                <form id="navSearch">
+                    <span class="material-symbols-outlined">search</span>
+                    <input type="search" name="search-bar" id="search-bar" placeholder="Search">
+                    <button id="submitSearch"></button>
+                </form>
+                <div>
+                    <button id="cart" class="nav-icon">
+                        <span class="material-symbols-outlined">shopping_bag</span>
+                    </button>
+                </div>
+                <div>
+                    <button id="profile" class="nav-icon">
+                        <span class="material-symbols-outlined">person</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button id="rewardButton" class="fa rb fa-gift"> Rewards</button>
+
+    <!-- <<<<<<<<<<<<<<<<<<<<<<<<write your signup code hear >>>>>>>>>>>>>>>>>>>>>>>>>-->
+    <div class="centerContainer">
+        <h1>Create Account</h1>
+        <button id="fb"><i class="fa fa-facebook-f fbb"></i> <span> Facebook Signup</span></button> <br>
+
+        <button id="google"><i class="fa fa-google cc"></i> <span>Google signup</span></button>
+
+        <form id="signin">
+            <p><label class="labell">EMAIL</label></p>
+            <input type="email" id="email">
+            <p><label class="labell">PASSWORD</label></p>
+            <input type="text" id="password">
+            <button id="creat">SINGIN</button>
+            <p>Don't have an account?<span style="color: rgb(20, 167, 225);"> 
+               <a href="signup.html">Sign up here.</a> </span></p>
+        </form>
+    </div>
+
+    <div id="footer">
+        <!-- Column 1 -->
+        <div>
+            <h1>GET TO KNOW US</h1>
+            <p>ABOUT US</p>
+            <p>CONTACT US</p>
+            <p>EARTHCARE</p>
+            <p>AFFILIATE PROGRAM</p>
+            <p>TERMS & CONDITIONS</p>
+            <p>REFUND & CANCELLATION</p>
+            <p>PRIVACY POLICY</p>
+            <p>ORDER & SHIPPING</p>
+            <p>PAYMENT TERMS</p>
+            <p>TERMS OF SERVICE</p>
+            <p>REFUND POLICY</p>
+        </div>
+
+        <!-- Column 2 -->
+        <div>
+            <h1>ALSO AVAILABLE ON</h1>
+            <p>NYKAA</p>
+            <p>AMAZON</p>
+            <p>FLIPKART</p>
+            <p>MYNTRA</p>
+        </div>
+
+        <!-- Column 3 -->
+        <div>
+            <h1>STAY UPDATED</h1>
+            <div>
+                <input type="text" name="footerEmail" id="footerEmail">
+                <button id="footerSubmit">SUBMIT</button>
+            </div>
+            <div>
+                <p>FOLLOW US
+                    <span class="fa fa-facebook"></span>
+                    <span class="fa fa-instagram"></span>
+                    <span class="fa fa-youtube"></span>
+                </p>
+            </div>
+            <div>
+                <span class="fa cr fa-copyright"></span>
+                <p>2022 Dot & Key</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    document.querySelector('#centerLogo').addEventListener('click', home);
+    document.querySelector('#cart').addEventListener('click', cart);
+    document.querySelector('#profile').addEventListener('click', profile);
+    // function for home page redirection
+    function home() {
+        console.log('home page')
+            // window.location.href='index.html'
+    }
+    // functin for cart page redirection
+    function cart() {
+        console.log('cart page')
+            // window.location.href='cartPage.html'
+    }
+    // functin for profile page redirection
+    function profile() {
+        console.log('profile page')
+            // window.location.href='profilePage.html'
+    }
+
+
+    //  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< SIGNIN JS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    //  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< SIGNIN JS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    //    <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< SIGNIN JS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+    let form = document.querySelector('#signin');
+    document.querySelector('#creat').addEventListener("click", submit);
+    let userdata = JSON.parse(localStorage.getItem("userdata")) || [];
+    let loginLS = JSON.parse(localStorage.getItem("login")) || 0;
+    let usernameLS = JSON.parse(localStorage.getItem("username")) || 0;
+    let usermail = JSON.parse(localStorage.getItem("usermail")) || 0;
+
+    function submit(event) {
+        event.preventDefault();
+        let signinObj = {
+
+            email: document.querySelector('#email').value,
+            password: document.querySelector('#password').value,
+        }
+        if (checkdata(signinObj.email, signinObj.password) == true) {
+            alert("signin sucessful");
+            loginLS = 1;
+            localStorage.setItem("login", loginLS);
+
+            useremailLS = signinObj.email;
+
+            localStorage.setItem("useremail", useremailLS);
+        } else {
+            alert("wrong email and password");
+        }
+    }
+
+    function checkdata(email, password) {
+        let filter = userdata.filter(function(ele) {
+            usernameLS = ele.fname + " " + ele.lname;
+            localStorage.setItem("username", usernameLS);
+            return ele.email == email && ele.password == password;
+
+        })
+        if (filter.length > 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+</script>
