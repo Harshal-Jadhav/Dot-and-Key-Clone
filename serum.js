@@ -16,7 +16,7 @@ let productData = [
     itemQty: 1,
     des: "10% AHA + 2% BHA EXFOLIATING GLOW HYDRO PEEL",
     catagory: "Dry Skin",
-    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-6_3_360x.jpg?v=1646477545",
+    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/20_VITC_360x.jpg?v=1655379925",
   },
   {
 
@@ -27,7 +27,7 @@ let productData = [
     itemQty: 1,
     des: "10% Niacinamide Face Serum With Zinc | Women & Men",
     catagory: "Dry Skin",
-    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1_3057d434-6349-42b8-aefe-1673c8d24265_360x.jpg?v=1649327316",
+    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/NIACINAMIDE_6ffa90b5-94d9-4ecc-bff1-c4c113fe47b5_360x.jpg?v=1655311005",
   },
   {
 
@@ -38,7 +38,7 @@ let productData = [
     itemQty: 1,
     des: "2% Salicylic Face Serum With Tea Tree Oil | Women and Men",
     catagory: "Normal Skin",
-    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-6_2_ff47654b-ba0b-43c5-ac01-7888e451d4e7_360x.jpg?v=1646476750",
+    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/ACNEBUSTING_360x.jpg?v=1655370921",
   },
   {
 
@@ -49,7 +49,7 @@ let productData = [
     itemQty: 1,
     des: "20% Vitamin C Serum with Blood Orange | Women and Men",
     catagory: "Normal Skin",
-    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Untitled-1_e13fe0e4-6313-45f1-b5f6-fe829a4c5dec_360x.jpg?v=1650465566",
+    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/retinolserum_6d24c355-84a6-42bf-b4a4-bcf30318f39a_360x.jpg?v=1655311178",
   },
   {
 
@@ -60,7 +60,7 @@ let productData = [
     itemQty: 1,
     des: "30% AHA Blood Orange + 2% BHA GLOW ACCELERATOR PEEL",
     catagory: "Oily Skin",
-    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-3_4_ae587533-265c-4e47-84bf-81c14bbc6539_360x.jpg?v=1646476775",
+    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/VITCSERUM_360x.jpg?v=1655311150",
   },
   {
 
@@ -71,7 +71,7 @@ let productData = [
     itemQty: 1,
     des: "AGE DEFENSE 2% BHA GLOW ACCELERATOR GLOW NIGHT SERUM",
     catagory: "Acnc Control",
-    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/2_11_360x.webp?v=1644493946",
+    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/ha_9b347964-36a7-412d-9d09-bb59e71561c5_360x.jpg?v=1655310900",
   },
   {
 
@@ -82,7 +82,7 @@ let productData = [
     itemQty: 1,
     des: "Alpha Arbutin + Azelaic Biphasic RADIANCE Serum",
     catagory: "Hydration",
-    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-2_3_360x.jpg?v=1646476857",
+    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/hpgp_80b9ffae-6c52-41f4-ace4-54e30f701a30_360x.jpg?v=1655311040",
   },
   {
 
@@ -93,7 +93,7 @@ let productData = [
     itemQty: 1,
     des: "Avocado + Superfoods Nourishing Face Oil",
     catagory: "Hydration",
-    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/1_1_360x.jpg?v=1644916657",
+    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/gloes_360x.jpg?v=1655303583",
   },
   {
 
@@ -104,7 +104,7 @@ let productData = [
     itemQty: 1,
     des: "PHA + Bakuchiol Daily Peel Serum",
     catagory: "Mature Skin",
-    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1_4_7a306ce8-6ac4-4704-9284-aa5264e20546_360x.jpg?v=1646476826",
+    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/alpha_2d5537db-5f5e-4e89-b23f-2465c39fafac_360x.jpg?v=1655303449",
   },
   {
 
@@ -115,7 +115,7 @@ let productData = [
     itemQty: 1,
     des: "RETINOL TIME REVERSE FACE SERUM",
     catagory: "Mature Skin",
-    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-4_4_763d27a2-de17-476f-9058-0891cd25b094_360x.jpg?v=1646476808"
+    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/1_2_360x.jpg?v=1644862670"
   },
   {
 
@@ -126,7 +126,7 @@ let productData = [
     itemQty: 1,
     des: "Rosehip Glow Elixir Face Oil",
     catagory: "Mature Skin",
-    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-7_2_360x.jpg?v=1646476789",
+    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/baku_360x.jpg?v=1655303484",
   },
   {
 
@@ -137,7 +137,7 @@ let productData = [
     itemQty: 1,
     des: "SKIN AWAKENING MOISTURIZING SERUM",
     catagory: "Age Defance",
-    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/1_2_360x.jpg?v=1644862670",
+    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/1_1_360x.jpg?v=1644916657",
   },
   {
 
@@ -159,7 +159,7 @@ let productData = [
     itemQty: 1,
     des: "SKIN AWAKENING MOISTURIZING SERUM",
     catagory: "Oily Skin",
-    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1_32f28fd1-371e-4840-b4a1-216f31a43318_360x.jpg?v=1649328433",
+    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/2_11_360x.webp?v=1644493946",
   },
 ]
 

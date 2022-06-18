@@ -1,5 +1,5 @@
 bodyScrub = [{
-    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-14.jpg?v=1646477249",
+    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/LEMONSCRUB.jpg?v=1655303198",
     rating: "4.7/5",
     person: "(26)",
     des: "Vitamin C & Avalon Lemon",
@@ -22,7 +22,7 @@ bodyScrub = [{
 }];
 
 serumLotions = [{
-    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-3_5_1f30698f-72cf-4165-8bca-302aa29817e2.jpg?v=1646477193",
+    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/ROSELOTION.jpg?v=1655303248",
     rating: "4.7/5",
     person: "(26)",
     des: "Damask Rose & Lavender",
@@ -33,7 +33,7 @@ serumLotions = [{
     dis: "SAVE 10%",
 },
 {
-    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-11_2.jpg?v=1646477397",
+    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-11_1_1.jpg?v=1655310547",
     rating: "4.7/5",
     person: "(26)",
     des: "Avalon Lemon & Verbena",

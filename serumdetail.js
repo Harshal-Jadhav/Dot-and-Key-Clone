@@ -20,13 +20,13 @@ function display(productdetailpage) {
 
 
         let price1 = document.createElement("span")
-        price1.innerText = elem.price1 +"  "
-        price1.setAttribute("class","price1")
+        price1.innerText = elem.price1 + "  "
+        price1.setAttribute("class", "price1")
         let price2 = document.createElement("span")
-        price2.innerText = "Rs: "+elem.price
-        price2.setAttribute("class","price2")
- 
-        document.querySelector("#pricelebel").append(price1,price2)
+        price2.innerText = "Rs: " + elem.price
+        price2.setAttribute("class", "price2")
+
+        document.querySelector("#pricelebel").append(price1, price2)
 
         document.querySelector("#productImage").append(productphoto)
         document.querySelector("#productdescription").append(producttext)
@@ -47,24 +47,33 @@ document.querySelector('#cart').addEventListener('click', cart);
 document.querySelector('#profile').addEventListener('click', profile);
 // function for home page redirection
 function home() {
-    console.log('home page')
-    // window.location.href='index.html'
+    window.location.href = 'index.html'
 }
 // functin for cart page redirection
+let cartDataLS = JSON.parse(localStorage.getItem('cartData')) || []
 function cart() {
-    console.log('cart page')
-    // window.location.href='cartPage.html'
+    if (cartDataLS.length === 0) {
+        window.location.href = 'emptyCart.html'
+    } else {
+
+        window.location.href = 'cart.html'
+    }
 }
 // functin for profile page redirection
+loginLS = JSON.parse(localStorage.getItem('login')) || 0;
 function profile() {
-    console.log('profile page')
-    // window.location.href='profilePage.html'
+    if (loginLS == 0) {
+        window.location.href = 'signin.html'
+    } else {
+
+        window.location.href = 'profile.html'
+    }
 }
 
 
 
 // New Update
-let loginLS = JSON.parse(localStorage.getItem('login')) || 0
+loginLS = JSON.parse(localStorage.getItem('login')) || 0
 let personBtn = document.querySelector('#profile')
 if (loginLS == 1) {
     personBtn.innerText = localStorage.getItem('userInitial')
@@ -74,7 +83,7 @@ if (loginLS == 1) {
     personBtn.setAttribute('class', 'material-symbols-outlined')
 
 }
-let cartDataLS = JSON.parse(localStorage.getItem('cartData'))
+cartDataLS = JSON.parse(localStorage.getItem('cartData')) || []
 let mark = document.querySelector('#mark')
 if (cartDataLS.length > 0) {
     mark.setAttribute('class', 'dotVisible')
@@ -83,13 +92,21 @@ if (cartDataLS.length > 0) {
 }
 
 // New Update V2.0
-document.querySelector('#menuButton').addEventListener('click',toggle)
+document.querySelector('#menuButton').addEventListener('click', toggle)
 
-function toggle(){
+function toggle() {
     let x = document.querySelector('#menu')
-    if(x.style.display=='grid'){
-        x.style.display='none'
-    }else{
-        x.style.display='grid'
+    if (x.style.display == 'grid') {
+        x.style.display = 'none'
+    } else {
+        x.style.display = 'grid'
     }
+}
+
+let x = document.querySelector('#addTocart')
+x.addEventListener('click', addtoCart)
+function addtoCart() {
+    cartDataLS.push(productdetailpage[0]);
+    localStorage.setItem('cartData', JSON.stringify(cartDataLS))
+    window.location.reload()
 }

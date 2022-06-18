@@ -59,7 +59,7 @@ buttons[1].addEventListener("click", function () {
 })
 //  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<OBJECT>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 let hairCareArr = [{
-    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1_35e55b48-0b45-41a1-a9cc-1d07cb4bbf46.jpg?v=1649327262",
+    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/MORINGASHAMPOO.jpg?v=1655302883",
     rating: " 4.8/5 (43)",
     des: "Argan Oil Anti Hairfall Shampoo With Moringa & Keratin|  ",
     price: 590.75,
@@ -68,7 +68,7 @@ let hairCareArr = [{
 
 },
 {
-    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1_3_20f621c6-95e5-442c-8d96-1be670078ef6.jpg?v=1646476389",
+    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/MORINGAMASK.jpg?v=1655303151",
     rating: "  4.7/5 (24)",
     des: "Pea Peptide Strengthening Moringa & Argan Hair Mask",
     price: 548.25,
@@ -78,7 +78,7 @@ let hairCareArr = [{
 
 },
 {
-    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-5_1_11bc8a1c-3330-413c-8aaf-bd1ebdb23dbe.jpg?v=1646476045",
+    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-5_4_d34e6033-1d52-4a86-85c5-6419c4d1fdb1.jpg?v=1655310462",
     rating: " 4.8/5 (26)",
     des: "Pea Peptide + Cysteine Hair Volumising Serum",
     price: 633.25,
@@ -88,7 +88,7 @@ let hairCareArr = [{
 
 },
 {
-    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-4_3.jpg?v=1646476025",
+    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1_1.jpg?v=1655310429",
     rating: "4.9/5 (22)",
     des: "AHA Exfoliation Apple Cider Hair & Scalp Scrub",
     price: 590.75,
@@ -98,7 +98,7 @@ let hairCareArr = [{
 
 },
 {
-    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-6_1_3728096d-d7d3-4616-923f-4220451f4cef.jpg?v=1646476077",
+    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/DAMAGESHAMPOO.jpg?v=1655303107",
     rating: "4.7/5 (28)",
     des: "Quinoa Protein & Olive Damage Repair Shampoo",
     price: 590.75,
@@ -109,7 +109,7 @@ let hairCareArr = [{
 
 },
 {
-    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-2_2_6fc754d7-d198-4000-b394-a0f6582c51c8.jpg?v=1646475973",
+    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-2_1.jpg?v=1655310406",
     rating: " 4.6/5 (18)",
     des: "Hyaluronic Hydrating Quinoa Protein & Olive Hair Mask",
     price: 548.25,
@@ -119,7 +119,7 @@ let hairCareArr = [{
 
 },
 {
-    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-3_3.jpg?v=1646475997",
+    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-3_1_7e78739e-57e0-4fc0-bffe-f68bd86ab876.jpg?v=1655310503",
     rating: " 4.8/5 (43)",
     des: "Argan Oil Anti Hairfall Shampoo With Moringa & Keratin| Helps Reduce Hair Fall & Breakage |For  ",
     price: 590.75,
@@ -129,7 +129,7 @@ let hairCareArr = [{
 
 },
 {
-    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1_35e55b48-0b45-41a1-a9cc-1d07cb4bbf46.jpg?v=1649327262",
+    img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/2_7.jpg?v=1643096418",
     rating: " 4.9/5 (17)",
     des: "Hyaluronic + Ceramide Hair Treatment Serum",
     price: 633.25,
@@ -241,13 +241,13 @@ if (cartDataLS.length > 0) {
 }
 
 // New Update V2.0
-document.querySelector('#menuButton').addEventListener('click',toggle)
+document.querySelector('#menuButton').addEventListener('click', toggle)
 
-function toggle(){
+function toggle() {
     let x = document.querySelector('#menu')
-    if(x.style.display=='grid'){
-        x.style.display='none'
-    }else{
-        x.style.display='grid'
+    if (x.style.display == 'grid') {
+        x.style.display = 'none'
+    } else {
+        x.style.display = 'grid'
     }
 }
