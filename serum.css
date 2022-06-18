@@ -136,8 +136,12 @@
         width: 200px;
         height: 45px;
         border-radius: 0px;
+        font-size: 17px;
+        font-weight: 550;
     }
     #featured{
+        font-weight: 550;
+        font-size: 17px;
         text-align: center;
         margin-left: 100px;
         border-radius: 0px;

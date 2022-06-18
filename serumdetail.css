@@ -6,7 +6,7 @@
 #productImageANDprice{
     width: 85%;
     /* height: auto; */
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: auto;
     font-family: sans-serif;
     text-align: center;
@@ -19,7 +19,7 @@
     width: 500px;
     height:500px;
     border-radius: 20px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 #productPrice{
     padding-left: 20px;
@@ -27,12 +27,12 @@
     margin-left: 20px;
     width: 50%;
     height: 904px;
-    border: 1px solid red;   
+    /* border: 1px solid red;    */
 }
 #productdescription{
     width:70% ;
     margin: auto;
-    border: 1px solid red;  
+    /* border: 1px solid red;   */
 }
 .checked{
     color: orange;
@@ -44,24 +44,26 @@
 #reat{
     margin-left: 10px;
     cursor: pointer;
+    color: rgb(194, 94, 94);
 }
 #reat:hover{
-    margin-left: 10px;
+    margin-left: 11px;
     cursor: pointer;
-    background-color: red;
-    color: rgb(255, 255, 255);
+    color: rgb(189, 2, 2);
+    /* background-color: red; */
 }
 
 #pricelebel{
     width: 300px;
     height: 30px;
-    border: 1px solid red;   
+    /* border: 1px solid red;    */
     cursor: pointer;
     margin-left: 25px;
     margin-top: 50px;
 }
 #tax{
     text-align: left;
+    padding-left: 30px;
     margin-top: 0px;
     font-size: 12px;
     margin-left: 25px;
@@ -106,11 +108,34 @@
     padding-right: 20px;
     font-size: 17px;
 }
+#pricelebel{
+    text-align: left;
+
+}
 
 
+.price1{
+    font-size: 25px;
+    padding-left:  30px;
+    font-weight: bold;
+    text-decoration-line: line-through;
+    
+}
 
+.price2{
+    padding-left: 20px;
+    font-size: 27px;
+    color: red;
+    font-weight: bold;
 
+}
+.price2:hover{
+    padding-left: 25px;
+    font-size: 27px;
+    color: red;
+    font-weight: bolder;
 
+}
 
 
 

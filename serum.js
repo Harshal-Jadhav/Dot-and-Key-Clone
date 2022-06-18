@@ -322,12 +322,12 @@ function featur(){
     
     if(value=="lowToHigh"){
         productData.sort(function(a,b){
-            return a.price2-b.price2
+            return a.price-b.price
         })
     }
     else if(value=="highToLow"){
         productData.sort(function(a,b){
-            return b.price2-a.price2
+            return b.price-a.price
         })   
 }
 alldata(productData)
