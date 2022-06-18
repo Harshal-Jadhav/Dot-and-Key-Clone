@@ -1,13 +1,12 @@
-#salebar {
+#salebar{
     /* margin-top: 10px; */
     width: 100%;
     margin-bottom: 30px;
 }
-
-#productImageANDprice {
+#productImageANDprice{
     width: 85%;
     /* height: auto; */
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: auto;
     font-family: sans-serif;
     text-align: center;
@@ -16,67 +15,60 @@
     display: flex;
     justify-content: space-between;
 }
-
-#productImage>img {
+#productImage>img{
     width: 500px;
-    height: 500px;
+    height:500px;
     border-radius: 20px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
-
-#productPrice {
+#productPrice{
     padding-left: 20px;
     padding-right: 20px;
     margin-left: 20px;
     width: 50%;
     height: 904px;
-    border: 1px solid red;
+    /* border: 1px solid red;    */
 }
-
-#productdescription {
-    width: 70%;
+#productdescription{
+    width:70% ;
     margin: auto;
-    border: 1px solid red;
+    /* border: 1px solid red;   */
 }
-
-.checked {
+.checked{
     color: orange;
 }
-
-.fa.fa-star {
-    font-size: 15px;
+.fa.fa-star{
+    font-size:15px;
     margin: 3px;
 }
-
-#reat {
+#reat{
     margin-left: 10px;
     cursor: pointer;
+    color: rgb(194, 94, 94);
 }
-
-#reat:hover {
-    margin-left: 10px;
+#reat:hover{
+    margin-left: 11px;
     cursor: pointer;
-    background-color: red;
-    color: rgb(255, 255, 255);
+    color: rgb(189, 2, 2);
+    /* background-color: red; */
 }
 
-#pricelebel {
+#pricelebel{
     width: 300px;
     height: 30px;
-    border: 1px solid red;
+    /* border: 1px solid red;    */
     cursor: pointer;
     margin-left: 25px;
     margin-top: 50px;
 }
-
-#tax {
+#tax{
     text-align: left;
+    padding-left: 30px;
     margin-top: 0px;
     font-size: 12px;
     margin-left: 25px;
 }
-
-#volume {
+#volume{
     cursor: pointer;
     width: 350px;
     height: 35px;
@@ -85,45 +77,65 @@
     margin-left: -200px;
     margin-top: 20px;
 }
-
-#addTocart {
+#addTocart{
     width: 450px;
     height: 41px;
     font-size: 18px;
     border-radius: 0px;
-    margin-top: 40px;
+    margin-top: 40px;  
     background-color: gray;
     color: white;
     border: 0px;
     cursor: pointer;
     font-size: 20px;
 }
-
-#addTocart:hover {
+#addTocart:hover{
     width: 452px;
     height: 42px;
     font-size: 18px;
     border-radius: 0px;
-    margin-top: 40px;
+    margin-top: 40px;  
     background-color: rgb(20, 20, 20);
     color: white;
     border: 0px;
     cursor: pointer;
     font-size: 20px;
 }
-
-#note {
+#note{
     width: 400px;
     line-height: 2;
     text-align: left;
     padding-right: 20px;
     font-size: 17px;
 }
+#pricelebel{
+    text-align: left;
+
+}
 
 
+.price1{
+    font-size: 25px;
+    padding-left:  30px;
+    font-weight: bold;
+    text-decoration-line: line-through;
+    
+}
 
+.price2{
+    padding-left: 20px;
+    font-size: 27px;
+    color: red;
+    font-weight: bold;
 
+}
+.price2:hover{
+    padding-left: 25px;
+    font-size: 27px;
+    color: red;
+    font-weight: bolder;
 
+}
 
 
 
@@ -155,7 +167,7 @@ body {
     align-items: center;
     font-size: 15px;
     font-weight: 700;
-    color: rgb(255, 255, 255);
+    color:rgb(255, 255, 255);
 }
 
 #navBar>div:last-child {
@@ -207,7 +219,7 @@ body {
     width: 220px;
     height: 80px;
     cursor: pointer;
-
+    
 }
 
 #nav-headSection3 {
@@ -242,7 +254,7 @@ body {
     background-color: #8c73c9;
     color: white;
     border: none;
-    z-index: 90;
+    z-index:90 ;
 }
 
 /* Footer style components */
@@ -340,6 +352,20 @@ input[id=footerEmail] {
     border: none;
     cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* new Update */

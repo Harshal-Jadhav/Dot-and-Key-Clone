@@ -15,7 +15,18 @@ function display(productdetailpage) {
         let producttext = document.createElement("h2")
         producttext.innerText = elem.des
 
+        // let price1 = document.createElement("span")
+
+
+
         let price1 = document.createElement("span")
+        price1.innerText = elem.price1 +"  "
+        price1.setAttribute("class","price1")
+        let price2 = document.createElement("span")
+        price2.innerText = "Rs: "+elem.price
+        price2.setAttribute("class","price2")
+ 
+        document.querySelector("#pricelebel").append(price1,price2)
 
         document.querySelector("#productImage").append(productphoto)
         document.querySelector("#productdescription").append(producttext)
@@ -53,6 +64,7 @@ function profile() {
 
 
 // New Update
+let loginLS = JSON.parse(localStorage.getItem('login')) || 0
 let personBtn = document.querySelector('#profile')
 if (loginLS == 1) {
     personBtn.innerText = localStorage.getItem('userInitial')
