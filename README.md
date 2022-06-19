@@ -7,7 +7,7 @@ Team members:
 3. Shagun Sharma
 4. paramjeet Rawat
 5. Shubham Patil
-
+6. Debojyoti Biswas
 ----------------Contents of Web-Site------------------------
 
 1. Home Page
